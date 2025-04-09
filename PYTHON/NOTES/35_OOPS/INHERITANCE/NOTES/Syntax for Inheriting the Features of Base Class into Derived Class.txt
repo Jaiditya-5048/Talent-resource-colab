@@ -1,0 +1,39 @@
+		======================================================================
+				Syntax for Inheriting the Features of Base Class into Derived Class
+		======================================================================
+
+		
+		class <clsname-1>:
+			------------------------
+			------------------------
+
+		class <clsname-2>:
+			---------------------------
+			---------------------------
+		--------------------------------------
+		--------------------------------------
+		class <clsname-n>:
+			---------------------------
+			---------------------------
+		
+		class <clsname-n+1>(clsname-1,clsname-2,.....,clsname-n):
+			---------------------------
+			---------------------------
+
+Exp:
+-----------
+=>Here clsname-n+1 Represents Derived Class
+=>Here clsname-1,clsname-2,.....,clsname-n represents Base Classes.
+=>With The above syntax, all the features of clsname-1,clsname-2,.....,clsname-n are Inheriting Clsname-n+1 Virtually. 
+   So that all the features of clsname-1,clsname-2,.....,clsname-n are avaiulable in Clsname-n+1 Virtually.
+=>When we develop any Inheritance Based Application, It is always Recommended to create an object of Bottom Most 
+    Derived Class bcoz It Inherits the Features of Intermediate Base Class(es) and Top Most Base Class.
+=>For Every Class in Python, there exist an Implicit Pre-Defined Super Class called 'object' and It Provides Garbage 
+   Collection to Its sub Classes. 
+========================================x===============================================
+
+
+
+
+		
+		       

@@ -1,0 +1,41 @@
+				====================================================================
+					Real Time applications Developed by using PYTHON Programming Lang
+				====================================================================	
+=>By Learning PYTHON Programming Lang with Some Combination of Technologies,we can develop the following 
+   Real Time Applications	
+
+				1. Development of Web Applications(Web Sites---www.osmania.ac.in, www.jntuh.ac.in)
+							a) Java Programming Lang----------Tech: JDBC,SERVLETS,JSP, HIBERNATE, 
+							                                                           SPRING,SPRING WITH MICRO SERVICES, SPRING BOOT...etc
+							    (Sun MS INC--->Oracle corp)
+							
+							b) C#.net Programming  Lang------Tech: ASP.NET CORE ASP.NET ADV, 
+															   ASP MICRO SERVICES...etc
+							    (Micro Soft INC USA
+							
+							c) PYTHON Programming Lang-----Tech: DJango, Flask,Bottle, pyramid...etc
+							                        This is Most Powerful Lang, Bcoz Python Provides Many MODULES
+										for Re-Using the Code--so that we write Less lines with more Meaning
+								
+				2. Developmnt of Gaming Applications 
+				3. Development of Artificial Intelligence Application (AI)
+								a) Machine Learning Applications
+								b) Deep learning Applications
+				4. Development of Image Processing applications
+				5. Development of Audio and Video Based Applications
+				6. Development of Bussiness Applications 
+				7. Development of Web Scrapping / Web Harvesting Applications
+				8. Development of Scientific Applications------NASA
+				9. Development of Software Development (project for ICICI, SBI...etc)
+				10. Development of OS Installers
+				11. Development of Language Development (Scala, Spark )
+				12. Develoment of Desttop GUI Applocations.
+				13. Development of Data Analysis and Data Analytics(EDA Projects--
+				14. Development of Automation of Testing
+				15. Development of Complex Math Calculations
+				16. Development of CAD and CAM Based Applications
+				17. Development of Computer Vision
+				18.  Development of  IOT 
+				19. Development of Data Visualization.
+				20.  Used in Education Systems  ....etc
+==========================================x==================================================

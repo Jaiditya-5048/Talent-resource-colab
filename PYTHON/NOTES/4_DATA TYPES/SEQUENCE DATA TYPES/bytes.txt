@@ -1,0 +1,72 @@
+			=======================================================
+							2. bytes
+			=======================================================
+=>'bytes' is one of the pre-defined class name and treated as sequence Data Type.
+=>The Purpose of bytes data type is that "To implement End-to-End Encryption of the Data(Security to data)".
+=>To implement End-to-End Encryption by using bytes data type, bytes data type object can store the Numerical Integer     Values ranges from 0 to256 (0 to 255 values).
+=>In Python Programming, There is no Symbolic Notation for Storing Directly bytes data bcoz No Python Programmer directly stores the bytes Data in Python Program. But in the Program, we can Convert Other Type Values into bytes type by using Type Casting Function bytes().
+=>Syntax:    varname=bytes(object)
+=>An Object of bytes maintains Insertion Oder nothing but whatever the order we enter the data, In the same order 
+   Data will be display ( Called Insertion Order )
+=>On the  object of bytes , we can perform Indexing and Slicing Operations.
+=>An Object of bytes belongs to IMMUTABLE bcoz bytes' object does not support item assignment
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> lst=[10,20,150,256,56,78]
+>>> print(lst,type(lst))-----------------------[10, 20, 150, 256, 56, 78] <class 'list'>
+>>> b=bytes(lst)-------------------------------ValueError: bytes must be in range(0, 256)
+>>> lst=[10,0,-20,150,255,56,78]
+>>> print(lst,type(lst))----------------------[10, 0, -20, 150, 255, 56, 78] <class 'list'>
+>>> b=bytes(lst)------------------------------ValueError: bytes must be in range(0, 256)
+----------------------------------------
+>>> lst=[10,0,20,150,255,56,78]
+>>> print(lst,type(lst))-----------------[10, 0, 20, 150, 255, 56, 78] <class 'list'>
+>>> b=bytes(lst)
+>>> print(b,type(b))-------------------b'\n\x00\x14\x96\xff8N' <class 'bytes'>
+>>> for v in b:
+...		print(v)
+...
+			10
+			0
+			20
+			150
+			255
+			56
+			78
+
+>>> b[0]----------------------10
+>>> b[1]----------------------0
+>>> b[-1]---------------------78
+>>> b[0:5]
+b'\n\x00\x14\x96\xff'
+>>> for v in b[0:5]:
+...		 print(v)
+...
+				10
+				0
+				20
+				150
+				255
+---------------------------
+>>> for val in b[::-1]:
+...		print(val)
+...
+			78
+			56
+			255
+			150
+			20
+			0
+			10
+----------------------------------
+>>> for v in b:
+... print(v) # IndentationError: expected an indented block after 'for' statement on line 1
+----------------------------------
+>>> lst=[10,0,20,150,255,56,78]
+>>> print(lst,type(lst))-----------------[10, 0, 20, 150, 255, 56, 78] <class 'list'>
+>>> b=bytes(lst)
+>>> print(b,type(b))--------------------b'\n\x00\x14\x96\xff8N' <class 'bytes'>
+>>> b[0]----------------10
+>>> b[0]=100------------TypeError: 'bytes' object does not support item assignment (Immutable)
+===========================================x==============================================

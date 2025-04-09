@@ -1,0 +1,54 @@
+			======================================================================
+					Number of Approaches to Develop Python Programs OR Applications
+			======================================================================
+-----------------------------------
+Definition of Program
+-----------------------------------
+=>Set of Optimized Instructions is Known as Program.
+=>Optimized Instructions are nothing Taking Less Execution Time and Taking Less Memory Space During Program 
+    execution by the System
+=>The Every Program Name Must Saved on Some File Name with an extension like .c , .cpp , .py ,  .java......etc 
+    (FileName.py)
+-------------------------------------
+Need of Writing Program
+-------------------------------------
+=>The purpose of Writing the Program in Industry is that "To Perform Some Task / Operation ".
+=>In Otherwords, the Need of Writing Program is that " To solve any given Problem / Task ".
+=>In Python Programming Language, If we write any Program then It must be saved on Some File Name with an 
+    extension .py (FileName.py)
+--------------------------------------------------------
+=>In Python Programming, we have Two Approaches to Develop the Program. They are
+
+			1. Interactive Approach
+			2. Batch Mode Approach
+***************************************************************************************************************************************
+1. Interactive Approach
+***************************************************************************************************************************************
+=> Interactive Approach development, Python Programmer can Issue / Write One Instruction at a time and Gets One 
+    Output OR Result at a time.
+=>Interactive Approach is useful for Testing One Instruction at a time But It is Not useful for Solving Big Problems  by wring Group of statments and More Over  Interactive Approach is not permiting the Programmer to save the Instructions for Re-Using the Code in Other Part of Applications OR Programs.
+------------------
+Examples:
+------------------
+			1. Python Command Prompt
+			2. Python IDLE Shell
+=>The above Two Softwares Comes in Our Machine on the Installation of Python Software.
+
+***************************************************************************************************************************************
+2. Batch Mode Approach
+***************************************************************************************************************************************
+=>In Batch Mode Approach, as a Python Programmer, we write OR develop Batch or Group of Optimized Instructions for Soving Big Problems and save those Optimized Instructions on the Some File Name with an extension .py (FileName.py--->Known as Program) and those Optimized Instructions  written in the form of Program can be Re-Used In other Part of Program (re-usability of Code of achieved)
+----------------------------------
+Examples Softwares
+----------------------------------
+		--------------------------------------
+		1) Python IDLE Shell (Will be Available in our Machine on the Installation of Python Software)
+		--------------------------------------
+			IDEs
+		--------------------------------------
+			1) PyCharm
+			2) Anaconda Jupiter Note Book
+			3) Anaconda  Spider
+			4) VS Code
+			5) Google Colab.....etc
+***************************************************************************************************************************************

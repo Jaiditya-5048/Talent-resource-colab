@@ -1,0 +1,31 @@
+
+
+Memory  : Hardware Componet used for Storing the Data
+
+			1. Main Memory ( RAM )--->Stores the Data Temporarly
+			2. Secondary Memory (Hard Disk)---->Stores the Data Permanently---   Files ---Concept 
+																		DataBases
+
+																			 a) Oracle
+																			 b) MySQL
+=====================================================
+Now  I want to Store 1000 Values 
+
+U suppose to allocate Memory Space in Main Memory-----Data Types(Allocate memory space in MM for Storing Data)
+
+
+=>1000 Locations Created students:  int a[100000]
+=>I got only 500 values-- 500 values stored 500 locations
+					   500 locations are wasted---is not called Waste of Memory Space
+
+					   How to Elimiate Un-Used Memory Space in C ?
+					            Do u have any Concept in C Lang---- NO
+						     programmer has to write code for Removing the Un-Used Memory Space--complex
+					How to Elimiate Un-Used Memory Space in C++ ?
+					            Do u have any Concept in C++ Lang---- NO
+						     programmer has to write code for Removing the Un-Used Memory Space--complex
+
+Modern Prog Lang--Like PYTHON, Java, C#.net--Provides a Facility Called "Gabage Collector"
+
+		How to Elimiate Un-Used Memory Space in Python----Gabage Collector
+	programmer need not to write code for Removing the Un-Used Memory Space-- Gabage Collector

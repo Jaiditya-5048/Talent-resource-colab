@@ -1,0 +1,292 @@
+			==========================================================================
+						 Identity Operators----Applicable to Python Command Prompt
+			==========================================================================
+=>The Purpose of Identity Operators is that "To Compare Memory Address of Two Objects".
+=>In Python Programming, we have 2 Identity Operators. They are
+
+			1. is Operator
+			2. is not Operator
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+1. is Operator
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:     Object1  is  Object2
+=>Here "is" Operator Returns True Provided Object1 and Object Contains Same address.
+=>Here "is" Operator Returns False Provided Object1 and Object Contains Different address.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2. is not Operator
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:     Object1  is not Object2
+=>Here "is not" Operator Returns True Provided Object1 and Object Contains Different address.
+=>Here "is" Operator Returns False Provided Object1 and Object Contains Same address.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE1: a. When we apply "is" between Deep Copy objects  then we get True
+	      b. When we apply "is not " between Deep Copy objects  then we get False
+
+NOTE2:  a. When we apply "is" between Shallow Copy objects  then we get False
+	       b. When we apply "is not " between Shallow Copy objects  then we get True
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=None
+>>> b=None
+>>> id(a)------------------140724091281872
+>>> id(b)------------------140724091281872
+>>> a is b-----------------True
+>>> a is not b------------False
+--------------------------------------------
+>>> d1={10:"Apple",20:"Mango"}
+>>> d2={10:"Apple",20:"Mango"}
+>>> id(d1)
+2096033953408
+>>> id(d2)
+2096033954048
+>>> d1 is d2
+False
+>>> d1 is not d2
+True
+-------------------------------------------------
+>>> s1={10,20,30,40}
+>>> s2={10,20,30,40}
+>>> id(s1)
+2096033899104
+>>> id(s2)
+2096033905152
+>>> s1 is s2
+False
+>>> s1 is not s2
+True
+---------------------------------------------------
+>>> lst1=[10,20,"Python"]
+>>> lst2=[10,20,"Python"]
+>>> id(lst1)------------------2096034101120
+>>> id(lst2)------------------2096034091200
+>>> lst1 is lst2
+False
+>>> lst1 is not lst2
+True
+>>> tpl=(10,20,"Python")
+>>> tpl1=(10,20,"Python")
+>>> id(tpl)-----------------2096034041856
+>>> id(tpl1)--------------2096034091392
+>>> tpl is tpl1
+False
+>>> tpl is not tpl1
+True
+-------------------------------------------------------------
+>>> r1=range(10,20,2)
+>>> r2=range(10,20,2)
+>>> id(r1)
+2096035484640
+>>> id(r2)
+2096035484688
+>>> r1 is r2
+False
+>>> r1 is not r2
+True
+>>> ba1=bytearray([10,20,30])
+>>> ba2=bytearray([10,20,30])
+>>> id(ba1)
+2096034049456
+>>> id(ba2)
+2096033859632
+>>> ba1 is ba2
+False
+>>> ba1 is not ba2
+True
+>>> ba1=bytes([10,20,30])
+>>> ba2=bytes([10,20,30])
+>>> id(ba1)
+2096035484112
+>>> id(ba2)
+2096035485552
+>>> ba1 is ba2
+False
+>>> ba1 is not ba2
+True
+------------------------------------
+>>> s1="PYTHON"
+>>> s2="PYTHON"
+>>> id(s1)
+2096034078976
+>>> id(s2)
+2096034078976
+>>> s1 is s2
+True
+>>> s1 is not s2
+False
+>>>
+>>> s1="PYTHON"
+>>> s2="PYTHNO"
+>>> id(s1)
+2096034078976
+>>> id(s2)
+2096035484784
+>>> s1 is s2
+False
+>>> s1 is not s2
+True
+>>> s="WRONG"
+>>> t="WROGN
+  File "<stdin>", line 1
+    t="WROGN
+      ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>>
+>>> s="WRONG"
+>>> t="WROGN"
+>>> s is t
+False
+>>> s is not  t
+True
+>>> "THIS" is "THSI"
+<stdin>:1: SyntaxWarning: "is" with 'str' literal. Did you mean "=="?
+False
+------------------------------------------------------------------------------------------------------------------
+>>> a=2+3j
+>>> b=2+3j
+>>> id(a)
+2096033988048
+>>> id(b)
+2096033973040
+>>> a is b
+False
+>>> a is not b
+True
+--------------------------------------------------------------------------------------------------------------
+>>> a=True
+>>> b=True
+>>> id(a)
+140724091281808
+>>> id(b)
+140724091281808
+>>> a is b
+True
+>>> a is not b
+False
+>>>
+>>>
+>>> a=1.2
+>>> b=1.2
+>>> id(a)
+2096030461104
+>>> id(b)
+2096033986352
+>>> a is b
+False
+>>> a is not b
+True
+------------------------------------
+>>> a=256
+>>> b=256
+>>> id(a)
+140724092082584
+>>> id(b)
+140724092082584
+>>> a is b
+True
+>>> a is not b
+False
+>>> a=257
+>>> b=257
+>>> id(a)
+2096033988080
+>>> id(b)
+2096033987824
+>>> a is b
+False
+>>> a is not b
+True
+>>>
+>>> a=0
+>>> b=0
+>>> id(a)
+140724092074392
+>>> id(b)
+140724092074392
+>>> a is b
+True
+>>> a is not b
+False
+-------------------------------------------
+>>> a=-1
+>>> b=-1
+>>> id(a)
+140724092074360
+>>> id(b)
+140724092074360
+>>> a is b
+True
+>>> a is not b
+False
+>>> a=-5
+>>> b=-5
+>>> id(a)
+140724092074232
+>>> id(b)
+140724092074232
+>>> a is b
+True
+>>> a is not b
+False
+>>> a=-6
+>>> b=-6
+>>> id(a)
+2096033988080
+>>> id(b)
+2096033988048
+>>> a is b
+False
+>>> a is not b
+True
+-----------------------------------------------------
+Multi Line assigment points
+-----------------------------------------------------
+>>> a,b=400,400
+>>> id(a)
+2096033972944
+>>> id(b)
+2096033972944
+>>> a is b
+True
+>>> a is not b
+False
+>>> a,b=9999999,9999999
+>>> a is b
+True
+>>> a is not b
+False
+>>>
+>>>
+>>> a,b=1.2,1.2
+>>> a is b
+True
+>>> a is not b
+False
+>>> a,b=2+3j,2+3j
+>>> a is b
+True
+>>> a is not b
+False
+>>>
+>>>
+>>> l1,l2=[10,20],[10,20]
+>>> l1 is l2
+False
+>>> l1 is not l2
+True
+>>> d1,d2={10:"Python"},{10:"python"}
+>>> d1 is d2
+False
+>>> d1 is not d2
+True
+===============================================x=======================================
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

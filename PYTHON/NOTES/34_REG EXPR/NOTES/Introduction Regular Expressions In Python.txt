@@ -1,0 +1,30 @@
+			=========================================================
+					Introduction Regular Expressions In Python
+			=========================================================
+=>The purpose of Regular Expressions is that "To Build Robust Applications by performing Data Validations".
+=>The Regular Expressions Concept is one of the  Independent Concept and It is Not Related to Perticular 
+    Programming Language.
+=>In All Programming Languages, Regular Expressions concept Implemented for Building Robust Application by 
+   adopting Data Validation Rules.
+------------------------------------------------
+Definition of Regular Expressions
+------------------------------------------------
+=>A Regular Expression is one of the Search Pattern, which is a combination of Alphabets, Digits and Special symbols and It is used for Matching OR Finding OR Searching in Given Data and obtains Desired Result.
+------------------------------------------------------
+Applications of Regular Expressions
+------------------------------------------------------
+=>Development of Language Compilers and Interpreters
+=>Development of Real Time OSes.
+=>Development of Electronic Circuit Designs
+=>Development of Universal Protocols such as http,smtp,nmtp...etc
+=>Development of Pattern Matching Applications.
+-----------------------------------------------------------------------------------------------------------
+
+givendata="Au46DpQ8@KqP2%LXmR5"
+
+
+I have to Prepare Reg Expr (Search Patterns) for getting  Lower Case Letters
+I have to Prepare Reg Expr  for getting  Upper  Case Letters
+I have to Prepare Reg Expr  for getting  Digits
+I have to Prepare Reg Expr  for getting  Special Symbols
+I have to Prepare Reg Expr  for getting  Alphabets

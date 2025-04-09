@@ -1,0 +1,15 @@
+#Program for Demonstarting the Functionality of Arithmetic Operators
+#ArithmeticOperatorsEx1.py
+a=int(input("Enter First Value:"))
+b=int(input("Enter Second Value:"))
+print("*"*50)
+print("\tARITHMETIC OPERATORS RESULTS")
+print("*"*50)
+print("\t\tSum({},{})={}".format(a,b,a+b))
+print("\t\tSub({},{})={}".format(a,b,a-b))
+print("\t\tMul({},{})={}".format(a,b,a*b))
+print("\t\tNormalDiv({},{})={}".format(a,b,a/b))
+print("\t\tFloor Div({},{})={}".format(a,b,a//b))
+print("\t\tModDiv({},{})={}".format(a,b,a%b))
+print("\t\tPower({},{})={}".format(a,b,a**b))
+print("*"*50)

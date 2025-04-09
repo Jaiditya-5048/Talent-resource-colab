@@ -1,0 +1,31 @@
+			===============================================================
+					Bitwise Operators ---Most IMP
+			===============================================================
+=>The purpose of Bitwise Operators is that "To perform Operations on Integer Data in the form of Bit by Bit".
+=>Bitwise Operators are applicable only Integer Data But not applicable on floating point values bcoz floating point 
+     values does not contain Certanity where as Integer Data provides Certainity.
+=>The Exexution Process of Bitwise Operators  is
+			i) Bitwise Operators Converts Integer Data into Binary Data.
+			ii) On Binary Data, Biwise Operator is applied on Binary Data and Result available in Binary Format.
+			iii)By Default Python Programming displays the result of Bitwise Operator in the form of Decimal 
+			     Number System bcoz Python is High Level Language.
+
+=>Internally, The Bitwise Operators Performs the Operations on Binary Data in the form Bit by Bit and hence they 
+   named Bitwise Operators.
+=>In Python Programming, we have 6 Types of Bitwise Operators. They are given in the following Table
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+SLNO		SYMBOL			MEANING
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.			<<				Bitwise Left Shift Operator
+
+2.			>>				Bitwise Right Shift Operator
+
+3.			&				Bitwise AND Operator
+
+4.			|				Bitwise OR Operator
+
+5.			~ (tilde)			Bitwise Complement Operator
+
+6.			^				Bitwise  XOR Operator
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+			

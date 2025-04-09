@@ -1,0 +1,28 @@
+			===============================================================
+							1. Simple
+			===============================================================
+=>Python is one of SIMPLE Programming Lanaguge bcoz of THREE important Technical Features. They are
+--------------------------
+Factor-1
+--------------------------
+=>Python Programming Provides "Rich Set of Modules". So that Python Programmers can re-use the Pre-Defined Code 
+    from Modules and we can complete the Given Task / Problem.
+***************************
+Definition of Module:
+***************************
+A Module is a Collection of Data Members, Function Names and class names
+Examples:    math, cmath,calendar,random...etc
+--------------------------
+Factor-2:
+--------------------------
+=>Python Programming Language Provides GARBAGE COLLECTOR. So that Garbage Collector Eliminates Un-used Memory Space and Improves performance of Python Based Applications.
+******************************************
+Definition of Gabarge Collector
+******************************************
+=>A Gabarge Collector is one of the System background python program which is running Behind of Regular Python Program whose purpose is to Collect OR remove un-used Memory space and Improves the Performance of Python Based Applications.
+=>hence garbage collector takes care about Automatic Memory Management.
+--------------------------
+Factor-3
+--------------------------
+Python Programming Lang Provides User-Freindly Syntaxes. So that python programmer can develop the program with error-Free in Limited span of time.
+================================================x==============================================

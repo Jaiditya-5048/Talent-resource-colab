@@ -1,0 +1,15 @@
+			=====================================================
+					Looping OR Iterative OR Repetative Statements
+			=====================================================
+=>The purpose of Looping OR Iterative OR Repetative Statements is that "To Perform Certain Operation Repeatedly OR 
+     Iteratively for Finite Number of Times until Test Condition becomes False."
+=>In Python Programming, we have 2 Types of Looping OR Iterative OR Repetative Statements. They are
+
+			1. while loop  OR  while...else loop
+			2. for loop   OR for ...else loop
+=>While we are using Looping Statements in Our Programmer, Programmer Must ensure 3 Points.
+
+			1. Initlization Part ( where to start )
+			2. Test Cond ( Where to stop-->in the continues Process of Iteration)
+			3. Updation Part ( Increment / Decrementation )
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

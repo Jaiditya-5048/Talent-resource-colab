@@ -1,0 +1,15 @@
+
+My requirement today: I want to Display  Calendar of a Month and Year--- June 2024
+
+In C , C++ Programming----- Calendar of a Month and Year--- 400 Lines of Code
+In Java Programming---------- Calendar of a Month and Year---25 lines of Code-------
+In C#.net Programming---------- Calendar of a Month and Year---25 lines of Code-------
+ In PYTHON Programming Lang----Calendar of a Month and Year---2 lines of Code-------Modules
+
+
+		Software Industry--we need to LIBRARIES
+
+LIBRARIES--C----Header files
+LIBRARIES--C++----Header files / Name Spaces
+LIBRARIES--Java----Packages
+LIBRARIES--PYTHON----MODULES

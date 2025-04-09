@@ -1,0 +1,13 @@
+			===========================================================
+						Type Casting Techniques in Python
+			===========================================================
+=>The purpose of Type Casting Techniques in Python is that " The Process of Converting One Possible Type of Value 
+    into Another type of Value."
+=>In Python Programming, we have 5 Fundamental Type Casting Techniques. They are
+
+			1. int()
+			2. float()
+			3. bool()
+			4. complex()
+			5. str()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,56 @@
+			========================================================
+					Course Name : Full Stack Python
+								Job Oriented Course
+			========================================================
+--------------------------------------------------------------------------------------------------------------------
+As a Part of this we Discuss the following Modules (Parts)	
+--------------------------------------------------------------------------------------------------------------------
+========================================
+Module-1: Python Programming--back bone----Ranked No:1
+========================================
+	a) Core Python
+	b) Advanced Python
+	c) Python For Data Science
+			i) Numpy Module
+			ii) Pandas Module
+			iii) MatplotLib Module
+===========================================
+Module-2------UI Tools 
+===========================================
+HTML
+CSS
+JAVA SCIRIPT
+BOOTSTRAP
+ANGULAR 
+===========================================
+Module-3: Web FrameWorks
+===========================================
+DJango
+Flask
+REST API
+===========================================
+Module-4: Data Base Softwares
+============================================
+MySQL
+Mongo DB
+============================================
+Module-5:Tools
+============================================
+GIT
+GITHUB
+Cloud Tech----GCP,AWS
+Testing Tech Methodlogies
+=======================================================================================
+For Learning This ---"Full Stack Python"----Strong Coding Skills
+
+Pre-Requisites:   No Need to Know C,C++,Java, C#.net, ...etc (Dummy--Student---- 0 )
+-----------------------
+To Get Job:	Graduate: B.Tech(Any Stream), MCA, M.Sc, BSc.BCA, MBA,B.Com....... .....any 		
+First Year B.Tech/BE------->
+==============================================================================
+To become EXPERT in CODING (FROM KVR) Student Must do the Following
+
+		1) Student Must be Puntual in Attending Classes
+		2) Student Must Read Notes / Practice My Assigments / Problems
+		3) Student Must Respond In Class Rooms
+---------------------------------------------------------------------------------------------------------------

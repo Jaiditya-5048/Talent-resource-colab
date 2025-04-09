@@ -1,0 +1,65 @@
+			======================================================
+					Files OR Stearms in Python
+			======================================================
+Index
+----------------------------------------------------
+=>Purpose of Files
+=>Types of Applications
+=>Definition of File and Stream
+=>Operations on Files
+		a) Write Operations
+		b) Read Operations
+=>Types of Files
+		a) Text Files
+		b) Binary Files
+---------------------------------------------------
+=>File Opening Modes
+		1. r		2. w		3. a
+		4. r+		5. w+	6. a+
+		7. x		8. x+
+=>Number of Approaches to Open the File
+		a) By using open()
+		b) By using "with open() as " 
+=>Programming Examples
+=>File Pointer Properties
+=>Programming Examples
+--------------------------------------------------------
+=>Writing the Data to the File
+		a) write()
+		b) writelines()
+=>Programming Examples
+=>Reading the Data from the File
+		a) read()
+		b) readlines()
+=>Programming Examples
+=>Random Access Files
+		a) tell()
+		b) seek()
+=>Programming Examples
+---------------------------------------------------------------
+=>Pickling (Object Serialization) and Un-Pickling (Object De-Serialization) Concept
+=> Implementing Pickling and Un-Pickling Operation by using "pickle" module
+=>Programing Examples
+-----------------------------------------------------------------
+=>Working with CSV Files ( Comma Separated Values)
+=>Implementation os CSV Files with "csv" module
+=>Functions  in csv Module
+		a) csv.reader()
+		b) csv.writer()
+		c) csv.DictReader()
+		d) csv.DictWriter()
+=>Programming Examples
+-------------------------------------------------------------------------------------------
+=>Working with JSON(Java Script Object Notation) Files
+=>Implementation of JSON Files with "json" module
+=>Functions in "json" Module
+		a) json.loads()
+		b) json.load()
+		c) json.dump()
+=>Programming Examples
+------------------------------------------------------------------------------------------
+=>Working OS Based Operations.
+=>Implementation OS Based Operations with "os" module.
+=>Programming Examples
+=========================================x=============================================
+

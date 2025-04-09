@@ -1,0 +1,34 @@
+			====================================================
+					 Dynamically Typed 
+			====================================================
+=>In IT, we have Two Types of Programming Langauges. They are
+
+			1. Static Typed Programming Languages
+			2. Dynamically Typed Programming Languages
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Static Typed Programming Languages
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In Static Typed Programming Languages, It is Mandatory  to Declare the Variables for Allocating the Memory with 
+   the help Data type and Giving Name to Created Memory Space on the Name of Variable.
+=>In Static Typed Programming Languages, without Declare the Variables (data type + variables) we can't store the 
+    Data and we get Compile Time Errors.
+=>The Limitation of Static Typed Programming Languages is that the Programmer may not be knowing Accurate Data 
+    type of the Values.
+Examples: C, C++, Java, C#.net....etc
+
+int a,b,c // Declare the Variables
+a=10
+b=20
+c=a+b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Dynamically Typed Programming Languages
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In Dynamically Typed Programming Languages, Python Execution Environment will decide data type of the value depends on type of value being used by Programmer in Program.
+=>In Python Programming, Python Programmer will not use the concept of Variable Declaration
+
+Examples:  PYTHON
+a=10
+b=20
+c=a+b
+print(a,b,c) # 10 20 30
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

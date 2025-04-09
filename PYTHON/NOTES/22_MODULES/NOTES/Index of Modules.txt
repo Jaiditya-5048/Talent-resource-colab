@@ -1,0 +1,28 @@
+			=================================================
+					Modules in Python
+			=================================================
+Index
+------------------------------------------------------------------------
+=>purpose of Modules
+=>Definition of Module
+=>Types of Modules
+		a) Pre-Defined Modules
+		b) Programmer OR User OR Custom Defined Modules
+=>Programming Examples
+=>Development of Programmer OR User OR Custom Defined Modules
+=>Number of Approaches to Re-Use Modules
+		a) By using import statement-----
+				Syntax1   importing single module
+				Syntax2   importing Multiple modules at same line
+				Syntax3   importing single module as alias name
+				Syntax4  importing Multiple modules at same line as alias names
+		b) By using from...import statement
+				Syntax1 from module name import GVN, Fun Names, Class Names
+				Syntax2 from module name import GVN as alias name, Fun Names as alias name, Class Names as alias name.
+				Syntax3 from module name import *
+=>Programming Examples
+----------------------------------------------------------------------------
+=>Re-Loading the Modules
+=>Implementation of Re-Loading the Modules with 'importlib' module
+=>Programming Examples
+=================================================================================

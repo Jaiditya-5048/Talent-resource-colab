@@ -1,0 +1,35 @@
+			====================================================
+				Syntax for  Defining a class in Python
+			====================================================
+			class  <clsname>:
+				Class Level Data Members
+				def  InstanceMethodName(self,list of formal Parms if any):
+					-----------------------------------------
+					-----------------------------------------
+					Specify Instance Data Members
+					Performs Specific Operations on Instnace Data Members
+					-----------------------------------------
+					-----------------------------------------
+				@classmethod
+				def  classlevelmethodname(cls,list of formal Parms if any):
+					-----------------------------------------
+					-----------------------------------------
+					Specify Class Level Data Members
+					Performs Common Operations on Objects of Same Class
+					-----------------------------------------
+					-----------------------------------------
+				@staticmethod
+				def  staticmethodname(list of formal Parms if any):
+					-----------------------------------------
+					-----------------------------------------
+					Performs Universal Operations on Objects of Any Class
+					-----------------------------------------
+					-----------------------------------------
+				def __init__(self, list of formal Parms if any):
+					-----------------------------------------
+					-----------------------------------------
+					Performs Object Initlizations
+					-----------------------------------------
+					-----------------------------------------
+				
+

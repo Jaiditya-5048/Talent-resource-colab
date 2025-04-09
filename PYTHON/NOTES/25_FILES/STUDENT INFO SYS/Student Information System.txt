@@ -1,0 +1,27 @@
+Project 
+
+		=============================================================
+					Student Information System
+		=============================================================
+				1. Insert Student Data
+				2. View Student Data
+				3. View All Students Data
+				4. Search Student Data
+				5. Exit
+		============================================================
+			Enter Ur Choice:
+		============================================================
+Project File System
+-----------------------------------
+1. StudentMenu.py
+	menu()
+2. StudentInsert.py
+	insertrecords()
+
+3. StudentViews.py
+		studentview()
+		studentviews()
+4. StudentSearch.py
+		search()
+5. StudentMainProject.py
+=====================================x================================

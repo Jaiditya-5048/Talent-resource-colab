@@ -1,0 +1,32 @@
+#Program for Generating  odd and even numbers by using Multiple Threads
+#OddEvenGenEx1.py
+import threading,time
+def odd(n):
+	if(n<=0):
+		print("{}--->{} is Invalid input".format(threading.current_thread().name,n))
+	else:
+		for val in range(1,n+1,2):
+			print("{}---{}".format(threading.current_thread().name,val))
+			time.sleep(1)
+		print("----------------------------------------------")
+
+def even(n):
+	if(n<=0):
+		print("{}--->{} is Invalid input".format(threading.current_thread().name,n))
+	else:
+		for val in range(2,n+1,2):
+			print("{}---{}".format(threading.current_thread().name,val))
+			time.sleep(1)
+		print("----------------------------------------------")
+
+#Main Program
+#Create Two Sub Threads
+ot=threading.Thread(target=odd, args=(int(input("Enter How Many ODD Number  want to generate:")) ,))
+et=threading.Thread(target=even, args=(int(input("Enter How Many EVEN Number  want to generate:")) ,))
+#dispatch Two Threads
+ot.start()
+et.start()
+
+#NOTE:
+#When we create Multiple Threads then we need to Defined Multiple Function Definition
+# Conclusion :  One Sub Thread : One Function Name
