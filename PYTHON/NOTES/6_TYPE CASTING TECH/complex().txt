@@ -1,0 +1,145 @@
+				===============================================
+							4. complex()
+				===============================================
+=>complex() is used for Converting other Possible type of Values into complex type value.
+=>Syntax:    varname=complex(int / float / bool / str )
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Example-1:  int type value into complex type : POSSIBLE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=10
+>>> print(a,type(a))--------------10 <class 'int'>
+>>> b=complex(a)
+>>> print(b,type(b))-------------(10+0j) <class 'complex'>
+>>> print(b.real)------------------10.0
+>>> print(b.imag)-----------------0.0
+>>> a=0
+>>> b=complex(a)
+>>> print(b,type(b))--------------0j <class 'complex'>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Example-2:  float type value into compelx type :POSSIBLE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=12.5
+>>> print(a,type(a))-----------------12.5 <class 'float'>
+>>> b=complex(a)
+>>> print(b,type(b))----------------(12.5+0j) <class 'complex'>
+>>> print(a.real)--------------------12.5
+>>> print(a.imag)-------------------0.0
+>>> a=0.5
+>>> print(a,type(a))---------------0.5 <class 'float'>
+>>> b=complex(a)
+>>> print(b,type(b))---------------(0.5+0j) <class 'complex'>
+>>> print(a.real)--------------------0.5
+>>> print(a.imag)-------------------0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Example-3: bool type value into complex type :
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=True
+>>> print(a,type(a))-----------True <class 'bool'>
+>>> b=complex(a)
+>>> print(b,type(b))-----------(1+0j) <class 'complex'>
+>>> print(b.real)--------------1.0
+>>> print(b.imag)-------------0.0
+>>> a=False
+>>> print(a,type(a))------------False <class 'bool'>
+>>> b=complex(a)
+>>> print(b,type(b))-----------0j <class 'complex'>
+>>> print(b.real)---------------0.0
+>>> print(b.imag)--------------0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Example-4 :  str type value into complex type :
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Case-1  : str int  into  complex : POSSIBLE
+------------------------------------------------------
+>>> a="12"
+>>> print(a,type(a))------12 <class 'str'>
+>>> a--------------------------'12'
+>>> b=complex(a)
+>>> print(b,type(b))----------(12+0j) <class 'complex'>
+------------------------------------------------------
+Case-2  :  str float  into  complex: POSSIBLE
+------------------------------------------------------
+>>> a="12.4"
+>>> print(a,type(a))--------------12.4 <class 'str'>
+>>> a---------------------------------'12.4'
+>>> b=complex(a)
+>>> print(b,type(b))----------------(12.4+0j) <class 'complex'>
+------------------------------------------------------
+Case-3  : str bool  into  complex: NOT POSSIBLE
+------------------------------------------------------
+>>> a="True"
+>>> print(a,type(a))----------------True <class 'str'>
+>>> a-----------------------------------'True'
+>>> b=complex(a)-------------------ValueError: complex() arg is a malformed string
+>>> print(complex('False'))--------ValueError: complex() arg is a malformed string
+------------------------------------------------------
+Case-4  : str complex  into  complex: POSSIBLE
+------------------------------------------------------
+>>> a="10+2.5j"
+>>> print(a,type(a))--------------10+2.5j <class 'str'>
+>>> b=complex(a)
+>>> print(b,type(b))--------------(10+2.5j) <class 'complex'>
+>>> print(b.real)-------------------10.0
+>>> print(b.imag)-----------------2.5
+-------------
+>>> a="2-3i"
+>>> print(a,type(a))-----------2-3i <class 'str'>
+>>> b=complex(a)------------ValueError: complex() arg is a malformed string
+>>> a="3+j3"
+>>> print(a,type(a))----------3+j3 <class 'str'>
+>>> b=complex(a)--------------ValueError: complex() arg is a malformed string
+>>> a="2j"
+>>> print(a,type(a))---------------2j <class 'str'>
+>>> b=complex(a)
+>>> print(b,type(b))--------------2j <class 'complex'>
+>>> print(b.real)------------------0.0
+>>> print(b.imag)----------------2.0
+------------------------------------------------------
+Case-5  : pure str into complex : NOT POSSIBLE
+------------------------------------------------------
+>>> a="Python+HTMLJ"
+>>> print(a,type(a))--------------Python+HTMLJ <class 'str'>
+>>> b=complex(a)---------------ValueError: complex() arg is a malformed string
+=========================================================================================
+Question:   how to assign for imag part to the existing complex number?
+Solution
+
+>>> a=2
+>>> print(a,type(a))--------------2 <class 'int'>
+>>> b=complex(a)
+>>> print(b,type(b))---------------(2+0j) <class 'complex'>
+>>>
+>>> x=3j  # Another Imaginary Part in Complex Number
+>>> a=a+x
+>>> a-----------------------------(2+3j)
+------------------------------
+>>> a=2
+>>> print(a,type(a))--------------2 <class 'int'>
+>>> b=complex(a)
+>>> print(b,type(b))-------------(2+0j) <class 'complex'>
+
+>>> k="3.5j"  # Another Imaginary Part as str with  Complex Number
+>>> b=b+k----------------TypeError: unsupported operand type(s) for +: 'complex' and 'str'
+>>> c=complex(k) # Convert str complex into complex
+>>> print(c,type(c))------------3.5j <class 'complex'>
+>>> b=b+c # Add the complex numbers ( b and c)
+>>> print(b)-------------(2+3.5j)
+=============================================x=======================================
+>>> a="2"
+>>> b="3j"
+>>> print(a,type(a))-------------2 <class 'str'>
+>>> print(b,type(b))------------3j <class 'str'>
+>>>
+>>> c=complex(a)+complex(b)
+>>> print(c)------------------(2+3j)
+
+		OR
+
+>>> a="2"
+>>> b="3j"
+>>> c=a+b
+>>> c----------------------'23j'
+>>> c=a+"+"+b
+>>> print(c)-------------'2+3j'
+>>> x=complex(c)
+>>> print(x)-------------(2+3j)
+=========================================x===========================================

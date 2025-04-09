@@ -1,0 +1,459 @@
+			===================================================
+					Pre-Defined Functions list
+			===================================================
+=>On the object of List, we can perform Indexing, Slicing and Updation.
+=>Along with these Operations, we can perform Different Type of Operations by using Pre-Defined Functions Present in list object. They are
+************************************************************************************************************************************************
+1. append()
+************************************************************************************************************************************************
+=>Syntax:  listobj.append(Value)
+=>This function is used for Adding the Value at the end of existing content of list(is called Appending).
+-------------------------
+Examples
+-------------------------
+>>> lst=[10,"RS",34.56]
+>>> print(lst,type(lst),id(lst))------------[10, 'RS', 34.56] <class 'list'> 1998523699072
+>>> lst.append("HYD")
+>>> print(lst,type(lst),id(lst))------------[10, 'RS', 34.56, 'HYD'] <class 'list'> 1998523699072
+>>> lst.append(300)
+>>> print(lst,type(lst),id(lst))------------[10, 'RS', 34.56, 'HYD', 300] <class 'list'> 1998523699072
+>>>
+>>> lst1=[]
+>>> print(lst1,type(lst1),id(lst1))-----------[] <class 'list'> 1998518944960
+>>> lst1.append(10)
+>>> lst1.append("RS")
+>>> lst1.append("PYTHON")
+>>> lst1.append(True)
+>>> print(lst1,type(lst1),id(lst1))-----------[10, 'RS', 'PYTHON', True] <class 'list'> 1998518944960
+-----------------------------
+>>> lst=[10,"RS",34.56]
+>>> print(lst,type(lst),id(lst))----------[10, 'RS', 34.56] <class 'list'> 1998523964224
+>>> lst.append("HYD","PYTHON")---------TypeError: list.append() takes exactly one argument (2 given)
+---------------------------------
+>>> lst=[10,"RS",34.56]
+>>> print(lst,type(lst),id(lst))-----------[10, 'RS', 34.56] <class 'list'> 1998515984640
+>>> lst.append(["HYD","PYTHON",True])
+>>> print(lst,type(lst),id(lst))-----------[10, 'RS', 34.56, ['HYD', 'PYTHON', True]] <class 'list'> 1998515984640
+**********************************************************************
+2) insert()
+**********************************************************************
+Syntax:   listobj.insert(Index,Value)
+=>This Function is used for Inserting Value at Specified Index and the Index can be either +VE or -VE
+=>When we Specify Invalid +Ve Index then PVM Insert the Value as Last Element.
+=>When we Specify Invalid -Ve Index then PVM Insert the Value as First Element.
+------------------------
+Examples
+------------------------
+>>> lst=[10,"RS",34.56,True]
+>>> print(lst,type(lst),id(lst))----------[10, 'RS', 34.56, True] <class 'list'> 2049550701120
+>>> lst.insert(2,"PYTHON")
+>>> print(lst,type(lst),id(lst))---------[10, 'RS', 'PYTHON', 34.56, True] <class 'list'> 2049550701120
+>>> lst.insert(3,2+3j)
+>>> print(lst,type(lst),id(lst))---------[10, 'RS', 'PYTHON', (2+3j), 34.56, True] <class 'list'> 2049550701120
+---------------------
+>>> lst=[10,"RS",34.56,True]
+>>> print(lst,type(lst),id(lst))---------[10, 'RS', 34.56, True] <class 'list'> 2049553615232
+>>> lst.insert(-2,345.67)
+>>> print(lst,type(lst),id(lst))--------[10, 'RS', 345.67, 34.56, True] <class 'list'> 2049553615232
+>>> lst.insert(-1,"PYTHON")
+>>> print(lst,type(lst),id(lst))--------[10, 'RS', 345.67, 34.56, 'PYTHON', True] <class 'list'> 2049553615232
+-----------------
+MOST IMP
+-----------------
+>>> lst=[10,"RS",34.56,True]
+>>> print(lst,type(lst),id(lst))----------------[10, 'RS', 34.56, True] <class 'list'> 2049550701120
+>>> lst.insert(20,"PYTHON")
+>>> print(lst,type(lst),id(lst))--------[10, 'RS', 34.56, True, 'PYTHON'] <class 'list'> 2049550701120
+>>> lst.insert(20,"PYTHON")
+>>> print(lst,type(lst),id(lst))--------[10, 'RS', 34.56, True, 'PYTHON', 'PYTHON'] <class 'list'> 2049550701120
+>>> lst.insert(-20,"PYTHON")
+>>> print(lst,type(lst),id(lst))----['PYTHON', 10, 'RS', 34.56, True, 'PYTHON', 'PYTHON'] <class 'list'> 2049550701120
+>>> lst.insert(-20,"HYD")
+>>> print(lst,type(lst),id(lst))--['HYD', 'PYTHON', 10, 'RS', 34.56, True, 'PYTHON', 'PYTHON'] <class 'list'> 2049550701120
+************************************************************************************************************************************************
+3) clear()
+************************************************************************************************************************************************
+=>Syntax:   listobj.clear()
+=>This Function is used for Removing all the Elements of List.
+=>When we call clear() on empty list object then we get Space OR None as Result.
+-------------------
+Examples
+-------------------
+>>> lst=[10,"RS",34.56,True]
+>>> print(lst,type(lst),id(lst))------------[10, 'RS', 34.56, True] <class 'list'> 2049553615232
+>>> len(lst)-----------------------------------4
+>>> lst.clear()
+>>> print(lst,type(lst),id(lst))------------[] <class 'list'> 2049553615232
+>>> len(lst)-----------------------------------0
+>>> lst.clear()----------------------------Space   as Result
+		OR
+>>> print(lst.clear())--------------------None
+--------------------------------
+>>> [].clear() ----------------------Space   as Result
+>>>
+>>> print([].clear())------------None
+>>> list().clear()---------------Space   as Result
+>>> print(list().clear())------None
+************************************************************************************************************************************************
+4) remove()----Value Based Removal
+************************************************************************************************************************************************
+=>Syntax: listobj.remove(Value)
+=>This Function is used for Removing First ocuurence of Specified Value from List Object
+=>When we call remove() on empty list object then we get ValueError
+-----------------------
+Examples
+-----------------------
+>>> lst=[10,20,30,40,50,60]
+>>> print(lst,type(lst),id(lst))--------------[10, 20, 30, 40, 50, 60] <class 'list'> 2049553799936
+>>> lst.remove(30)
+>>> print(lst,type(lst),id(lst))--------------[10, 20, 40, 50, 60] <class 'list'> 2049553799936
+>>> lst.remove(40)
+>>> print(lst,type(lst),id(lst))--------------[10, 20, 50, 60] <class 'list'> 2049553799936
+>>> lst.remove(60)
+>>> print(lst,type(lst),id(lst))--------------[10, 20, 50] <class 'list'> 2049553799936
+>>> lst.remove(15)-----------------ValueError: list.remove(x): x not in list
+--------------------
+>>> lst=[10,20,30,10,20,30,10]
+>>> print(lst,type(lst),id(lst))-------------[10, 20, 30, 10, 20, 30, 10] <class 'list'> 2049553614912
+>>> lst.remove(10)
+>>> print(lst,type(lst),id(lst))-------------[20, 30, 10, 20, 30, 10] <class 'list'> 2049553614912
+>>> lst.remove(10)
+>>> print(lst,type(lst),id(lst))------------[20, 30, 20, 30, 10] <class 'list'> 2049553614912
+>>> lst.remove(10)
+>>> print(lst,type(lst),id(lst))------------[20, 30, 20, 30] <class 'list'> 2049553614912
+>>> lst.remove(10)--------------------------ValueError: list.remove(x): x not in list
+>>> print(lst,type(lst),id(lst))-------------[20, 30, 20, 30] <class 'list'> 2049553614912
+----------------
+>>> [].remove(10)-----------------ValueError: list.remove(x): x not in list
+>>> list().remove(100)-----------ValueError: list.remove(x): x not in list
+************************************************************************************************************************************************
+5) pop(index)----Index Based Removal
+************************************************************************************************************************************************
+Syntax: listobj.pop(Index)
+=>This function is used for Removing the Element from List Object by passing Valid Index.
+=>When we enter Invalid index to pop() then we get IndexError
+=>When we call pop(index) upon empty list then we get IndexError
+---------------------------
+Examples
+----------------------------
+>>> lst=[10,20,30,10,20,30,10]
+>>> print(lst,type(lst),id(lst))---------------[10, 20, 30, 10, 20, 30, 10] <class 'list'> 2049553794688
+>>> lst.pop(3)---------------------------------10
+>>> print(lst,type(lst),id(lst))-------------------------[10, 20, 30, 20, 30, 10] <class 'list'> 2049553794688
+>>> lst.pop(-4)-------------30
+>>> print(lst,type(lst),id(lst))----------------------[10, 20, 20, 30, 10] <class 'list'> 2049553794688
+>>> lst.pop(10)---------------------------------------IndexError: pop index out of range
+>>> list().pop(0)-------------------------------------IndexError: pop from empty list
+>>> [].pop(-1)----------------------------------------IndexError: pop from empty list
+************************************************************************************************************************************************
+6) pop()
+************************************************************************************************************************************************
+Syntax:     listobj.pop()
+=>This function is used for Removing Last Element of List
+=>when we call pop() on empty list object then we get IndexError
+--------------------------------
+Examples
+--------------------------------
+>>> lst=[10,"RS",34.56,True,2+3j]
+>>> print(lst,type(lst),id(lst))--------------[10, 'RS', 34.56, True, (2+3j)] <class 'list'> 2049553816320
+>>> lst.pop()-----------------------------------(2+3j)
+>>> print(lst,type(lst),id(lst))-------------[10, 'RS', 34.56, True] <class 'list'> 2049553816320
+>>> lst.pop()-----------------------------------True
+>>> print(lst,type(lst),id(lst))-------------[10, 'RS', 34.56] <class 'list'> 2049553816320
+>>> lst.pop()----------------------------------34.56
+>>> print(lst,type(lst),id(lst))--------------[10, 'RS'] <class 'list'> 2049553816320
+>>> lst.pop()----------------------------------'RS'
+>>> print(lst,type(lst),id(lst))----------------[10] <class 'list'> 2049553816320
+>>> lst.pop()------------------------------------10
+>>> print(lst,type(lst),id(lst))---------------[] <class 'list'> 2049553816320
+>>> lst.pop()-------------------------------------IndexError: pop from empty list
+>>> [].pop()-----------------------------------IndexError: pop from empty list
+>>> list().pop()-------------------------------IndexError: pop from empty list
+>>> list().remove(10)----------------------ValueError: list.remove(x): x not in list
+************************************************************************************************************************************************
+NOTE:  del operator
+---------
+Syntax-1: del listobj[index]---------------------->Removes Single Element from ListObject by using Indexing
+Syntax-2:  del listobj[Begin:End:Step]------>Removes Multiple Elements from ListObject by using Slicing
+Syntax-3: del listobj--------------------------------->Removes Complete Object Physically
+-------------------------
+>>> lst=[10,20,30,40,50,60]
+>>> print(lst)-----------------------[10, 20, 30, 40, 50, 60]
+>>> del lst[3]
+>>> print(lst)-----------------------[10, 20, 30, 50, 60]
+>>> del lst[0:3]
+>>> print(lst)-----------------------[50, 60]
+>>> del lst[-1]
+>>> print(lst)-----------------------[50]
+-----------------------------
+>>> lst=[10,20,30,40,50,60]
+>>> print(lst)-----------------------[10, 20, 30, 40, 50, 60]
+>>> del lst[::2]
+>>> print(lst)-----------------------[20, 40, 60]
+--------------------------
+>>> lst=[10,20,30,40,50,60]
+>>> print(lst)-------------------------[10, 20, 30, 40, 50, 60]
+>>> del lst
+>>> print(lst)--------------------------NameError: name 'lst' is not defined
+NOTE: del operator Removes the Elements from MUTABLE OBJECTS based on Indexing and Slicing and we can also 
+            Remove complete Object ( Content + Physical Object memory)
+NOTE: del operator Can't Removes the Elements from IMMUTABLE OBJECTS based Indexing and Slicing But we can 
+           revmove complete Object ( Content + Physical Object memory)
+Examples
+-----------------
+>>> s="PYTHON"
+>>> del s[2]--------------------------TypeError: 'str' object doesn't support item deletion
+>>> del s[2:5]------------------------TypeError: 'str' object does not support item deletion
+>>> print(s)-----------------------PYTHON
+>>> del s
+>>> print(s)------------------------------NameError: name 's' is not defined
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+************************************************************************************************************************************************
+7) index()
+************************************************************************************************************************************************
+=>Syntax:   listobj.index(Value)
+=>This Function is used for Finding Index of First Occurence of Specified Value from List
+=>If the Specified Value does not exist in list object then we get ValueError
+-----------------------------------------------
+Examples
+------------------------------------------------
+>>> lst=[10,20,30,40,10,20,60,15,25]
+>>> print(lst)-------------------[10, 20, 30, 40, 10, 20, 60, 15, 25]
+>>> lst.index(10)--------------0
+>>> lst.index(20)--------------1
+>>> lst.index(25)--------------8
+>>> lst.index(35)--------------ValueError: 35 is not in list
+>>> [].index(10)----------------ValueError: 10 is not in list
+>>> list().index(100)----------ValueError: 100 is not in list
+>>> [10,10,10,20].index(10)---0
+>>> list([10,20,30,40,10]).index(20)----1
+**************************************************************************************************
+MOST IMP
+-------------------
+enumerate(): It is one of the Pre-Defined General Function
+			It is used for Obtaining Index and Value Present in Iterable Objects(Contains More than one value)
+----------------------------------------------------------------------------------------------------------
+>>> lst=[10,20,10,30,40,10,20,60,15,25]
+>>> for x,y in enumerate(lst):
+...		print(x,"--->",y)
+...
+		0 ---> 10
+		1 ---> 20
+		2 ---> 10
+		3 ---> 30
+		4 ---> 40
+		5 ---> 10
+		6 ---> 20
+		7 ---> 60
+		8 ---> 15
+		9 ---> 25
+>>> for x,y in enumerate(lst):
+...		if(y==10):
+...			print(x,"--->",y)
+...
+			0 ---> 10
+			2 ---> 10
+			5 ---> 10
+>>> for x,y in enumerate(lst):
+...		if(y==20):
+...			print(x,"--->",y)
+...
+			1 ---> 20
+			6 ---> 20
+>>> s="MISSISSIPPI"
+>>> for index,value in enumerate(s):
+...		print(index,"---->",value)
+...
+		0 ----> M
+		1 ----> I
+		2 ----> S
+		3 ----> S
+		4 ----> I
+		5 ----> S
+		6 ----> S
+		7 ----> I
+		8 ----> P
+		9 ----> P
+		10 ----> I
+>>> for index,value in enumerate(s):
+...		 if(value=="I"):
+...			print(index,"---->",value)
+...
+			1 ----> I
+			4 ----> I
+			7 ----> I
+			10 ----> I
+>>> for index,value in enumerate(s):
+...		if(value=="S"):
+...			print(index,"---->",value)
+...
+		2 ----> S
+		3 ----> S
+		5 ----> S
+		6 ----> S
+--------------
+>>> a=100
+>>> for index,value in enumerate(a):
+...		print(index,"---->",value)
+...
+				TypeError: 'int' object is not iterable
+
+************************************************************************************************************************************************
+8) count()
+************************************************************************************************************************************************
+Syntax:   listobj.count(value)
+=>This Function is used for Counting Number of Occurences of Specified Value(Frequency) in List object.
+=>If the Specified Value does not exist in list object then we get 0 as count
+-----------------------
+Examples
+-----------------------
+>>> lst=[10,20,10,30,40,10,20,60,15,25]
+>>> print(lst)---------------[10, 20, 10, 30, 40, 10, 20, 60, 15, 25]
+>>> lst.count(10)----------3
+>>> lst.count(20)----------2
+>>> lst.count(40)----------1
+>>> lst.count(400)---------0
+>>> [].count(0)--------------0
+>>> list().count(100)------0
+>>> [10,10,20,10,10].count(10)-------4
+>>> list("MISSISSIPPI")------------------['M', 'I', 'S', 'S', 'I', 'S', 'S', 'I', 'P', 'P', 'I']
+>>> list("MISSISSIPPI").count("I")-----4
+>>> list("MISSISSIPPI").count("S")------4
+>>> list("MISSISSIPPI").count("p")-----------0
+>>> list("MISSISSIPPI").count("P")-----------2
+************************************************************************************************************************************************
+9) copy()
+************************************************************************************************************************************************
+=>This function is used Copying the Content of One List Object to another list object ( Implemeting Shallow Copy).
+=>Syntax:   listobj2=listobj1.copy()
+--------------------------
+Examples
+--------------------------
+-----------------------------
+Examples
+------------------------------
+>>> lst1=[10,"RS",23.45]
+>>> print(lst1,id(lst1))-------------[10, 'RS', 23.45] 2214446695744
+>>> lst2=lst1.copy() # Shallow Copy
+>>> print(lst2,id(lst2))-----------[10, 'RS', 23.45] 2214446716096
+>>> lst1.append("HYD")
+>>> lst2.insert(2,"NL")
+>>> print(lst1,id(lst1))---------[10, 'RS', 23.45, 'HYD'] 2214446695744
+>>> print(lst2,id(lst2))---------[10, 'RS', 'NL', 23.45] 2214446716096
+--------------------------------
+Examples
+--------------------------
+>>> lst1=[10,"RS",23.45]
+>>> print(lst1,id(lst1))-----------------[10, 'RS', 23.45] 2214446695936
+>>> lst2=lst1 # Deep Copy
+>>> print(lst2,id(lst2))----------------[10, 'RS', 23.45] 2214446695936
+>>> lst1.append("HYD")
+>>> print(lst1,id(lst1))----------------[10, 'RS', 23.45, 'HYD'] 2214446695936
+>>> print(lst2,id(lst2))----------------[10, 'RS', 23.45, 'HYD'] 2214446695936
+>>> lst2.insert(2,"NL")
+>>> print(lst1,id(lst1))----------------[10, 'RS', 'NL', 23.45, 'HYD'] 2214446695936
+>>> print(lst2,id(lst2))-----------------[10, 'RS', 'NL', 23.45, 'HYD'] 2214446695936
+************************************************************************************************************************************************
+10) reverse()
+************************************************************************************************************************************************
+Syntax:   listobj2=lstobj1.reverse()
+=>This Function is used for Reversing the Elements listobj1 and place the reversed elements in listobj1 itself and 
+   reversed elements will not be placed listobj2(contains None)
+--------------------------
+Examples
+--------------------------
+>>> lst=[10,"RS",30,40,"PYTHON",True,2+3j]
+>>> print(lst,type(lst),id(lst))-----------[10, 'RS', 30, 40, 'PYTHON', True, (2+3j)] <class 'list'> 2905272406592
+>>> lst.reverse()
+>>> print(lst,type(lst),id(lst))----------[(2+3j), True, 'PYTHON', 40, 30, 'RS', 10] <class 'list'> 2905272406592
+------------------------
+>>> lst=[10,"RS",30,40,"PYTHON",True,2+3j]
+>>> lst1=lst.reverse()
+>>> print(lst1)-------------None
+>>> print(lst)-------------[(2+3j), True, 'PYTHON', 40, 30, 'RS', 10]
+--------------------------OR-------------------------------------------------------------
+>>> lst=[10,"RS",30,40,"PYTHON",True,2+3j]
+>>> print(lst,type(lst),id(lst))-------------[10, 'RS', 30, 40, 'PYTHON', True, (2+3j)] <class 'list'> 2905275189632
+>>> lst1=lst[::-1]
+>>> print(lst,type(lst),id(lst))--------------[10, 'RS', 30, 40, 'PYTHON', True, (2+3j)] <class 'list'> 2905275189632
+>>> print(lst1,type(lst1),id(lst1))--------[(2+3j), True, 'PYTHON', 40, 30, 'RS', 10] <class 'list'> 2905272406592
+************************************************************************************************************************************************
+11) sort()--Most Imp
+************************************************************************************************************************************************
+=>Syntax-1:  listobj.sort()--------------------------->Gives the The Data in ASCending Order
+=>Syntax-2:  listobj.sort(reverse=False)------->Gives the The Data in ASCending Order
+=>Syntax-3:  listobj.sort(reverse=True)--------->Gives the The Data in DESCending Order
+-----------------------------------
+Examples
+-----------------------------------
+>>> lst1=[10,12,4,-3,40,9,11,8]
+>>> print(lst1,type(lst1),id(lst1))---------------[10, 12, 4, -3, 40, 9, 11, 8] <class 'list'> 2905272406592
+>>> lst1.sort()
+>>> print(lst1,type(lst1),id(lst1))---------------[-3, 4, 8, 9, 10, 11, 12, 40] <class 'list'> 2905272406592
+>>> lst1.reverse()
+>>> print(lst1,type(lst1),id(lst1))---------------[40, 12, 11, 10, 9, 8, 4, -3] <class 'list'> 2905272406592
+--------------------------------------
+>>> lst1=[10,12,4,-3,40,9,11,8]
+>>> print(lst1,type(lst1),id(lst1))---------------[10, 12, 4, -3, 40, 9, 11, 8] <class 'list'> 2905275374592
+>>> lst1.sort(reverse=True)
+>>> print(lst1,type(lst1),id(lst1))--------------[40, 12, 11, 10, 9, 8, 4, -3] <class 'list'> 2905275374592
+-------------------------------------
+>>> lst1=[10,12,4,-3,40,9,11,8]
+>>> print(lst1,type(lst1),id(lst1))-------------[10, 12, 4, -3, 40, 9, 11, 8] <class 'list'> 2905272406592
+>>> lst1.sort(reverse=False)
+>>> print(lst1,type(lst1),id(lst1))-------------[-3, 4, 8, 9, 10, 11, 12, 40] <class 'list'> 2905272406592
+--------------------------------------------
+>>> lst1=["Java","Python","Algol","Go","Kotlin"]
+>>> print(lst1,type(lst1),id(lst1))----------------['Java', 'Python', 'Algol', 'Go', 'Kotlin'] <class 'list'> 2905275374592
+>>> lst1.sort()
+>>> print(lst1,type(lst1),id(lst1))----------------['Algol', 'Go', 'Java', 'Kotlin', 'Python'] <class 'list'> 2905275374592
+-------------------------
+>>> lst1=["Java","Python","Algol","Go","Kotlin"]
+>>> print(lst1,type(lst1),id(lst1))-----------['Java', 'Python', 'Algol', 'Go', 'Kotlin'] <class 'list'> 2905272406592
+>>> lst1.sort(reverse=True)
+>>> print(lst1,type(lst1),id(lst1))-----------['Python', 'Kotlin', 'Java', 'Go', 'Algol'] <class 'list'> 2905272406592
+----------------------------------
+>>> lst1=[10,"RS",True,2+3j,23.45,False]
+>>> print(lst1,type(lst1),id(lst1))---------[10, 'RS', True, (2+3j), 23.45, False] <class 'list'> 2905275374592
+>>> lst1.sort()----------------------------------TypeError: '<' not supported between instances of 'str' and 'int'
+************************************************************************************************************************************************
+12) extend() 
+************************************************************************************************************************************************
+Syntax:   listobj1.extend(listobj2)
+=>This Function is used for adding OR merging listobj2 values to listobj1
+			OR
+Syntax:   listobj1=listobj1+listobj2+........+listobj-n		
+---------------------
+Examples
+---------------------
+>>> lst1=[10,20,30,40]
+>>> lst2=["RS","TR","DR"]
+>>> print(lst1,type(lst1),id(lst1))---------------[10, 20, 30, 40] <class 'list'> 2905272406592
+>>> print(lst2,type(lst2),id(lst2))---------------['RS', 'TR', 'DR'] <class 'list'> 2905275374592
+>>> lst1.extend(lst2)
+>>> print(lst1,type(lst1),id(lst1))---------------[10, 20, 30, 40, 'RS', 'TR', 'DR'] <class 'list'> 2905272406592
+>>> print(lst2,type(lst2),id(lst2))---------------['RS', 'TR', 'DR'] <class 'list'> 2905275374592
+---------------------------------------OR-------------------------------------------------------------------
+>>> lst1=[10,20,30,40]
+>>> lst2=["RS","TR","DR"]
+>>> print(lst1,type(lst1),id(lst1))---------------------[10, 20, 30, 40] <class 'list'> 2905276667392
+>>> print(lst2,type(lst2),id(lst2))---------------------['RS', 'TR', 'DR'] <class 'list'> 2905272406592
+>>> lst2.extend(lst1)
+>>> print(lst2,type(lst2),id(lst2))---------------------['RS', 'TR', 'DR', 10, 20, 30, 40] <class 'list'> 2905272406592
+>>> print(lst1,type(lst1),id(lst1))--------------------[10, 20, 30, 40] <class 'list'> 2905276667392
+--------------------------------
+>>> lst1=[10,20,30,40]
+>>> lst2=["RS","TR","DR"]
+>>> lst3=[1.2,1.3,1.4]
+>>> lst1.extend(lst2,lst3)--------------------TypeError: list.extend() takes exactly one argument (2 given)
+>>> #-------------OR-----------------
+>>> lst1.extend(lst2)
+>>> lst1.extend(lst3)
+>>> print(lst1)--------------------------------[10, 20, 30, 40, 'RS', 'TR', 'DR', 1.2, 1.3, 1.4]
+-------------------------OR-----------------------------
+>>> lst1=[10,20,30,40]
+>>> lst2=["RS","TR","DR"]
+>>> lst3=[1.2,1.3,1.4]
+>>> lst1=lst1+lst2+lst3 # here we are using + Operator for Merging of Multiple List objects
+>>> print(lst1)------------------[10, 20, 30, 40, 'RS', 'TR', 'DR', 1.2, 1.3, 1.4]
+************************************************************************************************************************************************

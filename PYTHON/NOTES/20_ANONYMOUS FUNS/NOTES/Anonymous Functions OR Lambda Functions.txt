@@ -1,0 +1,37 @@
+			=========================================================
+					Anonymous Functions OR Lambda Functions
+			=========================================================
+=>The Anonymous Functions are those which does not contain any name Explicitly (No name to gievn to the 
+    explicitly).
+=>The purpose of Anonymous Functions is that " To Perform Instant Operations ".
+=>The Instant Operations are those which are performing the Operations at that point of time only and No Longer 
+    Interested to use in Other Part of the Project.
+=>To Develop or Define Anonymous Functions, we use a keyword called "lambda" and hence Anonymous Functions 
+   are     also called Lambda Functions.
+=>The Anonymous Functions contains single Executable statement( for smaller Problems)  but not contain Multiple 
+   Statements.
+=>The Anonymous Functions returns the Result automatically OR Implicitly (No Need to write return statement).
+---------------------------------------------------------------------------------------------------------------------------------------
+Syntax for Defining Anonymous Functions
+---------------------------------------------------------------------------------------------------------------------------------------
+				varname=lambda Params-list: Expression
+---------------------------------------------------------------------------------------------------------------------------------------
+Explanation
+---------------------------------------------------------------------------------------------------------------------------------------
+=>Varname Represents a Valid Variable Name and treated as an Object of type <class,'function'> and we can that variable Name as function call ( Hence It is Treated Indirect Name of Anonymous Function)
+=>lambda  is a Keyword and It used for Defining Anonymous Function
+=>Parms-list Represents List of variable names which are used for Storing the Inputs coming from function calls.
+=>Expression Represents Single Executable Statement which will provide solution for Given Smaller Problem.
+    After exeucting Single executable statement, Programmer need not to write return statement and PVM Return the value automatically.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Problem:  Define a Function for Adding of Two Numbers
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+By Using Normal Function:					By Using Anonymous Function
+---------------------------------------				-------------------------------------------------------------
+def  sumop(a,b):							addop=lambda a,b: a+b
+      return a+b
+
+#main program
+res=sumop(10,20) # function call
+print("Sum=",res)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

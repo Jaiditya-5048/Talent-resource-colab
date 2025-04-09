@@ -1,0 +1,89 @@
+			======================================================
+					6. Membership Operators
+			======================================================
+=>The purpose of Membership Operators is that "To Check whether  the value present in Iterable Object or not".
+=>In Python Programming, we have 2 Membership Operators. They are
+
+			1. in Operator
+			2. not in Operator
+--------------------------------------------------------------------------------------------------------------------------------------------
+1. in Operator
+--------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:   Value in Iterable-Object
+-------------
+=>The "in" Operator return True provided Value present in Iterable-Object.
+=>The "in" Operator return False provided Value not present in Iterable-Object.
+=>Here Iterable-Object represents any Object contains More than one Value (Sequence, list, set, dict )
+=>Here Non-Iterable-Object represents any Object contains  one Value (int,float,bool,complex)
+--------------------------------------------------------------------------------------------------------------------------------------------
+2. not in Operator
+--------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:   Value not in Iterable-Object
+-------------
+=>The "not in" Operator return True provided Value not present in Iterable-Object.
+=>The "not in" Operator return False provided Valuepresent in Iterable-Object.
+=>Here Iterable-Object represents any Object contains More than one Value (Sequence, list, set, dict )
+=>Here Non-Iterable-Object represents any Object contains  one Value (int,float,bool,complex)
+--------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+--------------------------------------------------------------------------------------------------------------------------------------------
+>>> s="PYTHON"
+>>> print(s)----------------------PYTHON
+>>> "P" in s---------------------True
+>>> "O" in s---------------------True
+>>> "o" in s---------------------False
+>>> "HON" in s-----------------True
+>>> "PYTH" in s---------------True
+>>> "PYTH" not in s---------False
+>>> "Java" not in s----------True
+>>> "Java" in s---------------False
+--------------------------
+>>> s="PYTHON"
+>>> print(s)-------------------PYTHON
+>>> "PTO" in s--------------False
+>>> "NOH" not in s---------True
+>>> "HON" in s--------------True
+>>> "HON" not in s---------False
+>>> s="PYTHON"
+>>> print(s)----------------PYTHON
+>>> "HON" in s[::-1]----False
+>>> "HON" not in s[::-1]---True
+>>> "NOH" in s[::-1]-------True
+>>> "NOH" not in s[::-1]----False
+------------------------------------------
+>>> lst=[10,"Rossum",34.56,2+3j]
+>>> print(lst)-------------[10, 'Rossum', 34.56, (2+3j)]
+>>> "Rossum" in lst---True
+>>> "ssum" in lst----False
+>>> "ssum" in lst[1]----True
+>>> "ssum" not in lst[1]----False
+>>> 2+3j in lst[-1]------------------------TypeError: argument of type 'complex' is not iterable
+>>> 2.0 in lst[-1].real--------------------TypeError: argument of type 'float' is not iterable
+>>> "muss"[::-1] not in lst[1][::-1]----True
+>>> lst[1][::2] not in lst[1][::-1][::-1]---True
+------------------------------------------------------------------------------
+>>> d1={10:"Python",20:"Java",30:"HTML"}
+>>> print(d1)----------------{10: 'Python', 20: 'Java', 30: 'HTML'}
+>>> "Python" not in d1---True
+>>> 10 in d1----True
+>>> 30 not in d1-----------False
+>>> "HTML" not in d1.keys()-----------True
+>>> (30,"HTML") not in d1------------True
+>>> (20,"Java") in d1.items()---------True
+>>> (20,"Java") in d1.items()[::-1]----------TypeError: 'dict_items' object is not subscriptable
+>>> d1[10][::-1] in d1.get(10)[::]-------------False
+>>> d1.values()[0] not in d1[10][::-1][::]------------TypeError: 'dict_values' object is not subscriptable
+---------------------------------------------------------------------------------------
+>>> d1={10:"Python",20:"Java",30:"HTML"}
+>>> print(d1)----------{10: 'Python', 20: 'Java', 30: 'HTML'}
+>>> d1 in d1-----------TypeError: unhashable type: 'dict'
+---------------------------------------------------------
+>>> s1={10,20,30,40,50}
+>>> print(s1)-----------------{50, 20, 40, 10, 30}
+>>> 20 in s1-------------------True
+>>> 20 not in s1[::-1]----------TypeError: 'set' object is not subscriptable
+>>> a="1234"
+>>> 12 in a------------TypeError: 'in <string>' requires string as left operand, not int
+>>> "12" in a--------True
+>>> str(12) in str(12)[::-1]------------False
+============================================================================================

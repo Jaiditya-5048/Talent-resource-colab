@@ -1,0 +1,114 @@
+				=========================================================
+								list 
+				=========================================================
+Index
+-------------
+=>What is list
+=>Purpose of list
+=>Notations for list
+=>syntax for creating list
+=>Types of List Objects
+=>Memory Management of List
+=>Pre-Defined Functions list
+=>Programming Examples
+=>Inner OR Nested List
+=>Pre-Defined functions in Nested OR Inner List
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Propertis of list
+*********************************************************************************************************************************************
+=>Here 'list' is one of the Pre-Defined Class and Treated as List Data Type.
+=>The Purpose of list data type is that "To store Multiple Values of Same Type OR Different Type OR Both the Types 
+    with Unique or Duplicates in Single Object".
+=>The Elements OR Values of list must be stored or enclosed within Square Brackets [ ] and Values must be separated 
+    by comma.
+=>Syntax:      varname=[Val1,Val2,......,Val-n]
+		Here varname is an object of <class, 'list'>
+=>An obejct of list maintains Insertion Order.
+=>On the object of list, we can perform Both Indexing and Slicing Operations.
+=>An Object of list belongs to MUTABLE bcoz list object allows us to perform Both Index Based and Slice Based 
+    Updation OR Modification.
+=>In Python Programming, we can Create Two types of List Objects. They are
+			i) Empty List 
+			ii) Non-Empty List
+------------------------
+i) Empty List 
+------------------------
+=>An Empty List is one, which does not contain any Elements OR Values and whose length is 0.
+=>Syntax-1:-      varname=[]
+=>Syntax-2:       varname=list()
+------------------------
+ii) Non-Empty List 
+------------------------
+=>A Non-Empty List is one, which  contains  Elements OR Values and whose length is > 0.
+Syntax-1:       varname=[Val1,Val2,......,Val-n]
+Syntax-2:		varname=list(Iterable-Object) # Iterable-Object is one which contains More than One Element
+Syntax-3		varname=list( [Non-Iterable-Object]) # Non-Iterable-Object is one which contains  One																Element(int,float,bool,complex only)
+*********************************************************************************************************************************************
+Examples
+*********************************************************************************************************************************************
+>>> lst1=[10,20,30,12,10,20,45,-56]
+>>> print(lst1,type(lst1))----------------[10, 20, 30, 12, 10, 20, 45, -56] <class 'list'>
+>>> lst2=["RS","TR","MC","DR"]
+>>> print(lst2,type(lst2))----------------['RS', 'TR', 'MC', 'DR'] <class 'list'>
+>>> lst3=[100,"RS",34.56,67,68.45,"OUCET"]
+>>> print(lst3,type(lst3))--------------[100, 'RS', 34.56, 67, 68.45, 'OUCET'] <class 'list'>
+-------------------------
+>>> lst1=[100,"RS",45.67,"Python",2+3j,True]
+>>> print(lst1,type(lst1),id(lst1))----------[100, 'RS', 45.67, 'Python', (2+3j), True] <class 'list'> 1998518765952
+>>> lst1[0]---------------------------------------100
+>>> lst1[0:4]-------------------------------------[100, 'RS', 45.67, 'Python']
+>>> lst1[0:4][::-1]-------------------------------['Python', 45.67, 'RS', 100]
+>>> lst1[::-1]-------------------------------------[True, (2+3j), 'Python', 45.67, 'RS', 100]
+------------------------------------------
+>>> lst1=[100,"RS",45.67,"Python",2+3j,True]
+>>> print(lst1,type(lst1),id(lst1))------------[100, 'RS', 45.67, 'Python', (2+3j), True] <class 'list'> 1998520247360
+>>> lst1[0]--------------100
+>>> lst1[0]=1000 # Index Based Modification / Updation
+>>> print(lst1,type(lst1),id(lst1))----------[1000, 'RS', 45.67, 'Python', (2+3j), True] <class 'list'> 1998520247360
+>>> lst1[0:3]-----------------[1000, 'RS', 45.67]
+>>> lst1[0:3]=[200,"GUIDO",44.44]   # Slice Based Modification / Updation
+>>> print(lst1,type(lst1),id(lst1))------[200, 'GUIDO', 44.44, 'Python', (2+3j), True] <class 'list'> 1998520247360
+-------------------------------------------
+>>> lst1=[]
+>>> print(lst1,type(lst1))--------------[] <class 'list'>
+>>> len(lst1)------------------------------0
+	OR
+>>> lst2=list()
+>>> print(lst2,type(lst2))-------------[] <class 'list'>
+>>> len(lst2)-----------------------------0
+--------------------------------------------
+>>> lst1=[10,20,10,20,30]
+>>> print(lst1,type(lst1))---------------[10, 20, 10, 20, 30] <class 'list'>
+>>> len(lst1)-------------------------------5
+----------------------------------------------------------
+>>> s="MISSISSIPPI"
+>>> print(s,type(s))----------------------------MISSISSIPPI <class 'str'>
+>>> lst=list(s)
+>>> print(lst,type(lst))-----------------------['M', 'I', 'S', 'S', 'I', 'S', 'S', 'I', 'P', 'P', 'I'] <class 'list'>
+>>> s="ABRAKADABRA"
+>>> print(s,type(s))--------------------------ABRAKADABRA <class 'str'>
+>>> lst=list(s)
+>>> print(lst,type(lst))----------------------['A', 'B', 'R', 'A', 'K', 'A', 'D', 'A', 'B', 'R', 'A'] <class 'list'>
+>>> r=range(10,21,3)
+>>> print(r,type(r))--------------------------range(10, 21, 3) <class 'range'>
+>>> lst=list(r)
+>>> print(lst,type(lst))----------------------[10, 13, 16, 19] <class 'list'>
+------------------------------
+>>> a=100
+>>> print(a,type(a))----------------------100 <class 'int'>
+>>> lst=list(a)-----------------------------TypeError: 'int' object is not iterable
+>>> lst=list(12.34)-----------------------TypeError: 'float' object is not iterable
+>>> lst=list([12.34])
+>>> print(lst,type(lst))-------------------[12.34] <class 'list'>
+>>> a=100
+>>> print(a,type(a))-----------------------100 <class 'int'>
+>>> lst=list([a])
+>>> print(lst,type(lst))---------------------[100] <class 'list'>
+============================================x=======================================
+
+
+
+
+
+
+*********************************************************************************************************************************************

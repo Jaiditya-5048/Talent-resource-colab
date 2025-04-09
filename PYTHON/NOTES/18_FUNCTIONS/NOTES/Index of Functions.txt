@@ -1,0 +1,52 @@
+			========================================================
+						Functions in Python
+					Functions(8)------------->Modules(2)------>Package(1)
+			========================================================
+Index
+-------------------------------------------------------------------------------------------------------
+=>Purpose of Functions
+=>Types of Languages
+		a) Un-Structured Programming Languages
+		b) Structured Programming Languages
+=>Advatnages of Functions
+=>Parts of Functions
+=>Phases of Functions
+=>Syntax for Defining a Function
+=>Number of Approaches to Define Functions for Problem Solving
+=>Programming Examples
+-------------------------------------------------------------------------------------------------------
+=>Arguments and Parameters
+=>Types of Arguments
+		a) Possitional Arguments
+		b) Default Arguments
+		c) Keyword Arguments
+		d) Variable Length Arguments
+		e) Keyword Variable Length Arguments
+	=>Programming Examples
+--------------------------------------------------------------------------------------------------------
+=>Global and Local Variables
+=>Programming Examples
+=>global keyword
+=>Programming Examples
+=>globals()
+=>Programming Examples
+--------------------------------------------------------------------------------------------------------
+=>Comprehension Techniques
+		i) List Comprehension
+		ii) Set Comprehension
+		iii) Dict Comprehension
+		iv) tuple Comprehension(not there)
+=>Programming Examples
+-----------------------------------------------------------------------------------------------------------
+=>Anonymous Functions OR Lambda Functions
+=>Implementation of Anonymous Functions OR Lambda Functions
+=>Programming Examples
+-----------------------------------------------------------------------------------------------------------
+=>Special Functions in Python
+		i) filter() with Normal and Anonymous Functions 
+		ii) map() with Normal and Anonymous Functions 
+		iii) reduce()  with Normal and Anonymous Functions 
+=>Programming Examples
+=================================x===============================================
+
+

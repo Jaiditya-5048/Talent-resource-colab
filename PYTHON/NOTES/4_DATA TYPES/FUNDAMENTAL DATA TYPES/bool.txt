@@ -1,0 +1,63 @@
+			===============================================
+						3. bool
+			===============================================
+=>Here bool is one of the pre-defined class and Treated as Fundamental Type.
+=>The Purpose of bool data type is that "To store True and False (Logical Values) values ".
+=>Here True and False Keywords are treated as Values for bool data type.
+=>Internally, the value of True is treated as 1  and False is treated as 0.
+=>On Bool Values, we can perform Arithmetic Operations ( Called Boolean Arithmetic )
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+--------------------------------------------------------------------------------------------------------------------------------------------------
+>>> a=False
+>>> print(a,type(a))-----------------False <class 'bool'>
+>>> a=True
+>>> print(a,type(a))----------------True <class 'bool'>
+--------------------------------------------
+>>> a=false-----------------NameError: name 'false' is not defined
+>>> a=true------------------NameError: name 'true' is not defined. 
+---------------------------------------------
+>>> a=True
+>>> b=False
+>>> c=a+b
+>>> print(c,type(c))-------------1 <class 'int'>
+>>> c=True+False+False
+>>> print(c,type(c))-------------1 <class 'int'>
+-----------------------------
+>>> print(True-2)-------------------1
+>>> print(2*True+3)---------------5
+>>> print(2*False+True-1)-------0
+>>> print(3+True+4)---------------8
+>>> print(True/True)--------------1.0
+>>> print(False/True)-------------0.0
+>>> print(False/False)------------ZeroDivisionError: division by zero------Most Imp
+>>> print(True/False)-------------ZeroDivisionError: division by zero-----Most Imp
+>>> print(True-0b1010)-----------    -9
+>>> print(0xF-True+True)-------    15
+>>> print(0xB-0o17+True)------     -3
+>>> print(0b1010+1.2+True)-----  12.2
+=============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------

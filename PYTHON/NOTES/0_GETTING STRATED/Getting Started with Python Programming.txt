@@ -1,0 +1,46 @@
+			============================================================
+					Getting Started with Python 	Programming
+			============================================================
+Index
+----------------
+=>History of Python
+=>Versions of Python Used in MNCs
+=>DownLoading and Installing of Python Software
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+								History of Python
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Python Programming Language concevied(Foundation stone laid down) in the Year 1980.
+=>Python Programming Language development started  in the Year 1989
+=>The Python Programming Language Officially Released in the Year 1991 Feb
+=>The Python Programming Language Developed by Guido Van Rossum (Father OR Author of Python)
+=>The Python Programming Language Developed at Centrum Wiskunde Informatica (CWI ) Institute in Nether Lands.
+=>The Python Programming Language Maintained and Managed by a Non-Commercial Organization called Python 
+     Software Foundation (PSF).
+=>The official web site of PSF is www.python.org
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+						Versions of Python Used in MNCs
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In Python Programming, we have 3 types of Versions. They are
+
+	1. Python 1.x, Here 1 is called Major Version and x represents 0 1 2 3 4 5 6 ..etc
+			here  Python 1.x is outdated
+		Python 2.x does not Support Backward Compatability. 
+		So that Python 2.x  does not support syntaxes of Python 1.x
+
+	2. Python 2.x Here 2 is called Major Version and x represents 0 1 2 3 4 5 6,7 ..etc
+			here  Python 2.x is outdated
+		Python 3.x does not Support Backward Compatability. 
+		So that Python 3.x  does not support syntaxes of Python 2.x
+
+	3. Python 3.x Here 3 is called Major Version and x represents 0 1 2 3 4 5 6,7 ,8 9,10,11,12,13.
+				current version---- Python 3.x
+				older version------- python 3.0--python 3.7
+				older version still continued---Python 3.8--3.10
+				Latest Version-------------python 3.11--python 3.12
+				Preview Version---------python 3.13
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+				DownLoading and Installing of Python Software
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Goto www.python.org
+=>Choose Down Loads
+============================================================================================

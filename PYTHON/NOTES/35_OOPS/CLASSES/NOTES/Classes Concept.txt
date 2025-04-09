@@ -1,0 +1,19 @@
+			========================================================
+						1. Classes
+			========================================================
+=>The purpose of Classes Concept is that " To develop Programmer-Defined Data Type + To Develop any Real Time 
+    Applications".
+=>The purpose of Developing Programmer-Defined Data Type is that "To Store Customized Data + To Perform 
+    Customized Operations".
+=>To Develop any Programmer-Defined Data Type by using classes concept, we use a key word called "class".
+=>Programatically, Every Class Name is treated as Programmer-Defined Data Type.
+=>Every Progrm in OOPs Must starts with Clases and Objects.
+--------------------------------------------------------------
+Definition of Class
+--------------------------------------------------------------
+=>A Class is a Collection of Data Members and Methods (Functions in OOPs are called Methods).
+=>When we define a Class, There is no memory space is created for Data Members and Methods But whose Memory 
+    Space is created when we create an Object w.r.t Class Name.
+=>What are all the Data Members and Methods Available in the Class, which are appearing as it is as a Part of Object with memory space. So that Programmers can store the Data in Data Members of Object and Performs Operations on the Data Members of Object by using Methods.
+--------------------------------------------------------------
+

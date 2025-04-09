@@ -1,0 +1,13 @@
+			=============================================================
+				Steps for Developing Python Database Communication Applications.
+			=============================================================
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Steps
+-------------------------------------------------------------------------------------------------------------------------------------------------
+1. Import Appropriate Database related Module and Other Modules if Required.
+2. Every Python Program must obtain the Connection from Machine where Data base Software Installed
+3. Every Python Program Must create an object of Cursor.
+4. Every Python Program Design the Query, Place the Query in Cursor and Execute the Query at Database
+5. Every Python Program Process the Result of Query which is Obtained from Database though cursor object
+6. Every Python Program Closes the Connection. ( optional )
+-------------------------------------------------------------------------------------------------------------------------------------------------

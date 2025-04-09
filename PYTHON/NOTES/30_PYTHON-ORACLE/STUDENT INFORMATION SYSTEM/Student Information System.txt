@@ -1,0 +1,44 @@
+Project --with Oracle DB
+Student Table--------------
+					-------------------------------------------------------------
+						Student table
+					-------------------------------------------------------------
+					SNO		NAME		MARKS  COLNAME
+					-------------------------------------------------------------
+					-------------------------------------------------------------
+
+
+
+Menu Operations
+----------------------------
+		=============================================================
+					Student Information System
+		=============================================================
+				1. Insert Student Data
+				2. View Student Data
+				3. View All Students Data
+				4. Search Student Data
+				5. Update Student Information
+				6. Delete Student
+				6. Exit
+		============================================================
+			Enter Ur Choice:
+		============================================================
+Project File System
+-----------------------------------
+1. StudentMenu.py
+	menu()
+2. StudentInsert.py
+	insertrecords()
+
+3. StudentViews.py
+		studentview()
+		studentviews()
+4. StudentSearch.py
+		search()
+5. StudentUpdate.py
+		studupdate()	
+6. StudentDelete.py
+		studdelete()
+5. StudentMainProject.py
+=====================================x================================

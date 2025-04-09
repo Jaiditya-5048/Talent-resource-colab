@@ -1,0 +1,97 @@
+		=====================================================
+					Special Points on Dict
+		=====================================================
+NOTE-1
+--------------
+>>> d={"sno":10,"name":"RS","CM":20,"CPPM":18,"JM:":13}
+>>> print(d,type(d))
+{'sno': 10, 'name': 'RS', 'CM': 20, 'CPPM': 18, 'JM:': 13} <class 'dict'>
+>>> for k in d:
+...     print(k)
+...
+sno
+name
+CM
+CPPM
+JM:
+>>> for k in d:
+...     print(k,d[k])
+...
+sno 10
+name RS
+CM 20
+CPPM 18
+JM: 13
+>>> for k in d:
+...     print(k,d.get(k))
+...
+sno 10
+name RS
+CM 20
+CPPM 18
+JM: 13
+
+-------------
+NOTE-2:
+-------------
+>>> lst=[["sno",10],["sname","RS"],["marks",67]]
+>>> print(lst,type(lst))----------------[['sno', 10], ['sname', 'RS'], ['marks', 67]] <class 'list'>
+>>> d=dict(lst)
+>>> print(d,type(d))-----------{'sno': 10, 'sname': 'RS', 'marks': 67} <class 'dict'>
+----------------------------
+>>> tpl=(("sno",10),("sname","RS"),("marks",67))
+>>> print(tpl,type(tpl))---------(('sno', 10), ('sname', 'RS'), ('marks', 67)) <class 'tuple'>
+>>> d=dict(tpl)
+>>> print(d,type(d))------------{'sno': 10, 'sname': 'RS', 'marks': 67} <class 'dict'>
+-----------------------
+>>> lst=[("sno",10),("sname","RS"),("marks",67)]
+>>> print(lst,type(lst))---------[('sno', 10), ('sname', 'RS'), ('marks', 67)] <class 'list'>
+>>> d=dict(lst)
+>>> print(d,type(d))-----------{'sno': 10, 'sname': 'RS', 'marks': 67} <class 'dict'>
+------------------------------
+>>> tpl=(["sno",10],["sname","RS"],["marks",67])
+>>> print(tpl,type(tpl))------------(['sno', 10], ['sname', 'RS'], ['marks', 67]) <class 'tuple'>
+>>> d=dict(tpl)
+>>> print(d,type(d))----------------{'sno': 10, 'sname': 'RS', 'marks': 67} <class 'dict'>
+>>> tpl=(("sno",10),["sname","RS"],("marks",67))
+>>> print(tpl,type(tpl))--------(('sno', 10), ['sname', 'RS'], ('marks', 67)) <class 'tuple'>
+>>> d=dict(tpl)
+>>> print(d,type(d))-------------{'sno': 10, 'sname': 'RS', 'marks': 67} <class 'dict'>
+------------------------------------
+>>> tpl=(["sno",10],{"sname","RS"},("marks",67)) # Not Recommended
+>>> print(tpl,type(tpl))------------(['sno', 10], {'RS', 'sname'}, ('marks', 67)) <class 'tuple'>
+>>> d=dict(tpl)
+>>> print(d,type(d))--------------{'sno': 10, 'RS': 'sname', 'marks': 67} <class 'dict'>
+------------------------------------------------------
+>>> lst=[("sno",10),("sname","RS"),("marks",67)]
+>>> print(lst,type(lst))---------------[('sno', 10), ('sname', 'RS'), ('marks', 67)] <class 'list'>
+>>> d=dict(lst)  # List object to Dict
+>>> print(d,type(d))------------{'sno': 10, 'sname': 'RS', 'marks': 67} <class 'dict'>
+
+>>> lst1=list(d.items()) # Dict Object  to List
+>>> print(lst1,type(lst1))----[('sno', 10), ('sname', 'RS'), ('marks', 67)] <class 'list'>
+>>> tpl1=tuple(d.items())   # Dict Object  to tuple
+>>> print(tpl1,type(tpl1))-----(('sno', 10), ('sname', 'RS'), ('marks', 67)) <class 'tuple'>
+-------------------------------------------------------------------------------------------------------
+zip()
+-------------
+>>> lst1=[10,20,30,40]
+>>> lst2=["RS","TR","DR","MC"]
+>>> z=zip(lst1,lst2)
+>>> print(type(z))-------------<class 'zip'>
+>>> print(z)----------<zip object at 0x000001423AB81200>
+>>> for sno,sna in z:
+...		print(sno,sna)
+...
+		10 RS
+		20 TR
+		30 DR
+		40 MC
+------------------------------------------------
+>>> lst1=[10,20,30,40]
+>>> lst2=["RS","TR","DR","MC"]
+>>> z=zip(lst1,lst2)
+>>> print(type(z))---------<class 'zip'>
+>>> d=dict(z) # Converting Zip Object into Dict type.
+>>> print(d,type(d))---------{10: 'RS', 20: 'TR', 30: 'DR', 40: 'MC'} <class 'dict'>
+--------------------------------------------------------------

@@ -1,0 +1,184 @@
+			===================================================================
+				Display the Result of Python Program on the Console
+								OR
+						print()
+			===================================================================
+=>To Display the Result of Python Program on the Console, we use a Pre-Defined Function called print()
+=>In Otherwords, print() is used for Displaying the Result of Python Program on the console (Moniter) .
+=>print() can be used in the following ways
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax-1:			print(Value)
+					OR
+				print(Value1,Value2,......,Value-n)
+					OR
+				print(Var1,Var2,......,Var-n)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+=>This Syntax is used for Displaying the Value(s)
+----------------
+Examples:
+----------------
+>>> print(10)----------------10
+>>> print(10,20,30)--------10 20 30
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(a)----------------10
+>>> print(b)---------------20
+>>> print(c)---------------30
+>>> print(a,b,c)-----------10 20 30
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax-2 :  print(Message)
+				OR
+		   print(Message1,Message2,.....,Message-n)
+				OR
+		print(Message1+Message2+Message-n)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+=>This Syntax is used for Displaying the Message(s)
+=>Here Message can be String and It must enclosed within Sngile OR Double OR Tripple Single OR Tripple double 
+    Quotes
+=>Here we can Operator + for Concatenating Str Values only But not with Other type of Values
+=>If we want concatenate other values with str value then other values must be converted into str by using str() and use + Operator.
+------------------------
+Examples
+------------------------
+>>> print("Hello Python  World")------------------Hello Python  World
+>>> print("""Hello Python  World""")------------Hello Python  World
+>>> print('Hello Python  World')------------------Hello Python  World
+-------------------
+>>> print("Hello","Python","World")-------------Hello Python World
+>>> print("Hello",'Python',"""World""")---------Hello Python World
+>>> print("Hello"+"Python"+"World")-----------HelloPythonWorld
+>>> print("Hello"+" "+"Python"+" "+"World")---Hello Python World
+-----------
+>>> print("Python"+3.12)-----------------TypeError: can only concatenate str (not "float") to str
+>>> print("Python"+str(3.12))------------Python3.12
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax-3: print(Message Cum Value)
+				OR
+		 print(Value cum Message)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+=>This Syntax displays Messages Cum Values OR Values Cum Messages.
+-----------------------
+Examples
+-----------------------
+>>> a=10
+>>> print("Val of a=",a)---------Val of a= 10
+>>> print("Val of a="+str(a))--Val of a=10
+-----------------
+>>> a=100
+>>> print(a,"is the val of a")-------------100 is the val of a
+>>> print(str(a)+" is the val of a")-----100 is the val of a
+----------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("sum=",c)---------------sum= 30
+>>> print("sum="+str(c))--------sum=30
+>>> print(c," is the sum")-------30  is the sum
+>>> print(str(c)+" is the sum")---30 is the sum
+-----------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("Sum of",a,"and",b,"=",c)------Sum of 10 and 20 = 30
+>>> print("Sum of "+str(a)+" and "+str(b)+"="+str(c))-----Sum of 10 and 20=30
+--------------------------
+>>> a=10
+>>> b=20
+>>> c=30
+>>> d=a+b+c
+>>> print("sum of",a,",",b,"and",c,"=",d)----sum of 10 , 20 and 30 = 60
+>>> print("Sum of "+str(a)+","+str(b)+" and "+str(c)+"="+str(d))----Sum of 10,20 and 30=60
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax-4:   print(Message Cum Value with format() )
+----------------------------------------------------------------------------------------------------------------------------------------------------
+=>This Syntax is used for Displaying the Values cum Messages with format()
+-------------------------
+Examples
+-------------------------
+>>> a=10
+>>> print("Val of a={}".format(a))--------------Val of a=10
+>>> print("{} is the val of a".format(a))------10 is the val of a
+---------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("Sum of {} and {}={}".format(a,b,c))---------Sum of 10 and 20=30
+>>> print("sum({},{})={}".format(a,b,c))----------------sum(10,20)=30
+>>> print("{}+{}={}".format(a,b,c))----------------------10+20=30
+----------------
+>>> a=10
+>>> b=20
+>>> c=30
+>>> d=a+b+c
+>>> print("sum of {},{} and {}={}".format(a,b,c,d))----------sum of 10,20 and 30=60
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax-5: print(Message Cum Values with format specifiers)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+=>Here Python Contains 3 Format Specifiers. They are
+
+	1) %d is used for Representing Integer Data
+	2) %f is used for Representing Float Data
+	3) %s is used for Representing Str Data 
+=>If any value does not contain format specifier then such type of value must be converted into str type by using str() 
+   and use %s for displaying corresponding values.
+-------------------------
+Examples
+-------------------------
+>>> a=10
+>>> print("Val of a=%d" %a)------------Val of a=10
+>>> print("%d is the val of a" %a)----10 is the val of a
+--------------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("sum of %d and %d=%d" %(a,b,c))-------sum of 10 and 20=30
+>>> print("Sum(%d,%d)=%d" %(a,b,c))-----------Sum(10,20)=30
+----------------------------------
+>>> a=10
+>>> print("Val of a=%f" %a)--------------------Val of a=10.000000
+>>> print("Val of a=%0.2f" %a)----------------Val of a=10.00
+>>> print("Val of a=%0.3f" %a)----------------Val of a=10.000
+>>> print("Val of a=%0.10f" %a)---------------Val of a=10.0000000000
+-------------------------------------
+>>> a=1.2
+>>> b=3
+>>> c=a*b
+>>> print("Mul(%f,%d)=%f" %(a,b,c))------------Mul(1.200000,3)=3.600000
+>>> print("Mul(%0.2f,%d)=%0.2f" %(a,b,c))---Mul(1.20,3)=3.60
+---------------------------------------
+>>> sno=10
+>>> sname="Rossum"
+>>> marks=34.56
+>>> print("My Roll Number is %d and name is %s and Marks is %0.2f" %(sno,sname,marks))
+			My Roll Number is 10 and name is Rossum and Marks is 34.56
+--------------------------------------------------------
+>>> lst=[10,"RS",34.56,False]
+>>> print("Content of lst=",lst)------------------Content of lst= [10, 'RS', 34.56, False]
+>>> print("Content of lst={}".format(lst))---Content of lst=[10, 'RS', 34.56, False]
+
+>>> print("Content of lst=%d" %lst)----------TypeError: %d format: a real number is required, not list
+>>> print("Content of lst=%f" %lst)-----------TypeError: must be real number, not list
+
+>>> print("Content of lst=%s" %str(lst))-----Content of lst=[10, 'RS', 34.56, False]
+---------------------
+>>> d={10:"Python",20:"C",30:"C++"}
+>>> print("Content of Dict=%s" %str(d))------Content of Dict={10: 'Python', 20: 'C', 30: 'C++'}
+>>> a = 2+3j
+>>> print("Content of a=%s" %str(a))--------Content of a=(2+3j)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax-6 : print(value,end="delimeter")
+----------------------------------------------------------------------------------------------------------------------------------------------------
+=>This syntax display the values in Same Line (Horizontally)
+--------------------------
+Examples
+--------------------------
+>>> for v in range(10,16):
+...     print(v,end=" ")------------------10 11 12 13 14 15
+>>>
+>>> for v in range(10,16):
+...     print(v,end="-->")--------------10-->11-->12-->13-->14-->15-->
+>>>
+>>> for v in range(10,16):
+...     print(v,end="\t")-------------10      11      12      13      14      15     
+----------------------------------------------------------------------------------------------------------------------------------------------------

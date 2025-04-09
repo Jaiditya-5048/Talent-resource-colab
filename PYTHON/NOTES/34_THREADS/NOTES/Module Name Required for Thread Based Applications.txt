@@ -1,0 +1,58 @@
+		===================================================================
+				Module Name Required for Thread Based Applications
+		===================================================================
+=>The Module Name Required for Thread Based Applications is "threading".
+=>"threading" modules contains Function, global Varuiables and Class Names
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functions in "threading" Module
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. current_thread(): This Function is used for Obtaning the Name of the Thread which is executing
+				Syntax:   varname=threading.current_thread()
+
+2. active_count(): This function is used for Obtaining Number of Active Threads which are under execution.
+				Syntax:    varname=threading.active_count()
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Class Name-1 in "threading" Module: Thread Class
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The 'Thread' is one the Pre-Defined Class present in "threading" module (threading.Thread)
+=>The purpose of 'Thread' class is that "To Create sub Threads".
+=>The 'Thread' Class contains the Following Pre-Defined functions.
+-------------------------------------
+1. Thread(target,args)
+-------------------------------------
+=>Syntax: threadobjname=threading.Thread(target=FunctionName,args=(Val1,Val2,....) )
+=>This Function creates sub Thread for exeuting The function name which is specified as target argument and It takes the values in the form of tuple (Val1,Val2,....) to the target function provided function definition takes parameter.
+-------------------------------------
+2. start()
+-------------------------------------
+=>Syntax:  threadobjname.start()
+=>This function is used for Dispatching the sub Threads to the target Function.
+=>NOTE: if don't use start() then thread will not execute target function.
+-------------------------------------
+3. getName() ------ "name " is the new format of getName()
+-------------------------------------
+=>This Function is used for Getting the Name of the Thread.
+=>getName() deprecated on the name of "name" attribute.
+Syntax:    threadobj.name-----------Recommended
+		threadobj.getName()-------Not Recommended
+-------------------------------------
+4. setName()------"name" is the new format of setName()
+-------------------------------------
+=>This Function is used for setting the Name of the Thread.
+=>setName() deprecated on the name of "name" attribute.
+Syntax:    threadobj.setName("Thread Name")    #-------Not Recommended
+		threadobj.name="Thread Name"          #-----------Recommended
+-------------------------------------
+5. is_alive()
+-------------------------------------
+=>This Function returns True when the thread is under execution Otherwise It retruns False
+=>Syntax:    threadobj.is_alive()
+-------------------------------------
+6. join()
+-------------------------------------
+=>Syntax:   ThreadObj1.join()
+		    ThreadObj2.join()	
+		    -------------------------
+		    ThreadObjn.join()
+=>This function is used for Making the sub therads to Join with Main Thread.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
